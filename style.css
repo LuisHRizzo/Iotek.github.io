@@ -1,0 +1,172 @@
+/* General styles */
+body {
+    background-color: #1a202c;
+    color: #cbd5e0;
+    font-family: 'Sans-serif', Arial, sans-serif;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+/* Gradient title */
+.gradient-title {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Hero section */
+#inicio {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+#inicio::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+#inicio .relative {
+    position: relative;
+    z-index: 2;
+}
+
+.gradient-btn {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    background-size: 200% 200%;
+    transition: background-position 0.5s ease, transform 0.3s ease;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.gradient-btn:hover {
+    background-position: 100% 0;
+    transform: scale(1.05);
+}
+
+/* Section spacing */
+section {
+    padding: 5rem 0;
+}
+
+/* Sobre Nosotros section */
+#sobre-nosotros .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    #sobre-nosotros .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Pyramid SVG */
+#sobre-nosotros svg {
+    width: 240px;
+    height: auto;
+}
+
+/* Cards */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Casos de éxito */
+.success-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.success-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.success-card:hover img {
+    transform: scale(1.1);
+}
+
+.success-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Contact section */
+form input,
+form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #4a5568;
+    border-radius: 0.5rem;
+    background-color: #2d3748;
+    color: #fff;
+}
+
+form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #3182ce;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2b6cb0;
+}
+
+/* Footer */
+footer {
+    background-color: #2d3748;
+    color: #cbd5e0;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer a {
+    color: #63b3ed;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #3182ce;
+}
+.glasmorphism {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}

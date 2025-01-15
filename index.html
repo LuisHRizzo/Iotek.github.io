@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Iotek Soluciones SA - Innovación y Confianza en Soluciones Tecnológicas">
+    <meta name="keywords" content="Tecnología, Innovación, Soluciones Tecnológicas, Seguridad, Iotek">
+    <meta name="author" content="Iotek Soluciones SA">
+    <title>Iotek Soluciones SA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-gray-300 font-sans">
+
+    <!-- Header -->
+    <header class="bg-blue-400 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <img src="src/logo.png" alt="Iotek Logo" class="h-16">
+
+            <!-- Botón hamburguesa -->
+            <button id="menu-toggle" class="block md:hidden focus:outline-none">
+                <svg class="w-8 h-8 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <!-- Navegación -->
+            <nav id="menu" class="hidden md:flex space-x-6 text-black">
+                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
+                    <li><a href="#inicio" class="text-black hover:text-blue-400">Inicio</a></li>
+                    <li><a href="#sobre-nosotros" class="hover:text-blue-400">Sobre Nosotros</a></li>
+                    <li><a href="#servicios" class="hover:text-blue-400">Servicios</a></li>
+                    <li><a href="#casos-exito" class="hover:text-blue-400">Casos de Éxito</a></li>
+                    <li><a href="#contacto" class="hover:text-blue-400">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center">
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+            <source src="src/video.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+        <div class="absolute inset-0 bg-black bg-opacity-2git add README.md0"></div> <!-- Filtro de opacidad sobre el fondo -->
+        <div class="relative z-10 px-4">
+            <h1 class="text-4xl md:text-6xl font-bold gradient-title">Bienvenido a Iotek: Servicios Tecnológicos de Vanguardia</h1>
+            <p class="mt-4 text-lg">Iotek ofrece soluciones tecnológicas innovadoras para impulsar tu negocio hacia el éxito.</p>
+            <a href="#contacto" class="mt-6 inline-block py-2 px-6 rounded-lg font-bold text-white gradient-btn hover:scale-105 transition-transform duration-300">Descubre Nuestros Servicios</a>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="sobre-nosotros" class="py-20 bg-blue-400 text-gray-900">
+        <div class="container mx-auto max-w-[70%] px-4">
+            <h2 class="text-3xl font-bold gradient-title text-center">Sobre Nosotros: Liderando la Transformación Digital</h2>
+            <div class="container mx-auto max-w-[70%] px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-10">
+                <!-- Pirámide -->
+                <div class="flex justify-center">
+                    <svg width="240" height="300" viewBox="0 0 100 100" class="w-64 h-auto">
+                        <polygon points="50,0 34,31 66,31" fill="#1f2937" />
+                        <text x="50" y="20" text-anchor="middle" fill="white" font-size="10" font-weight="bold">1</text>
+                        <polygon points="32,36 68,36 82,65 18,65" fill="#1f2937" />
+                        <text x="50" y="52" text-anchor="middle" fill="white" font-size="10" font-weight="bold">2</text>
+                        <polygon points="16,70 84,70 100,100 0,100" fill="#1f2937" />
+                        <text x="50" y="88" text-anchor="middle" fill="white" font-size="10" font-weight="bold">3</text>
+                    </svg>
+                </div>
+                <!-- Descripciones -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-xl font-bold">Experiencia</h3>
+                        <p class="mt-2">Con años de experiencia en el sector, ofrecemos un profundo conocimiento y una visión estratégica.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Innovación</h3>
+                        <p class="mt-2">Estamos comprometidos con la innovación constante, utilizando las últimas tecnologías para ofrecerte soluciones de vanguardia.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Pasión</h3>
+                        <p class="mt-2">Nuestra pasión por la tecnología y el compromiso con el éxito de nuestros clientes nos impulsa a superarnos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-20 bg-blue-400 text-gray-900">
+        <div class="container mx-auto max-w-[70%] px-4 text-center">
+            <h2 class="text-3xl font-bold gradient-title">Descripción General de Nuestros Servicios</h2>
+            
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glasmorphism p-6 rounded-lg shadow-lg success-card">
+                    <h3 class="text-xl font-bold">Desarrollo de Software</h3>
+                    <p class="mt-4">Desarrollamos software personalizado que se adapta a tus necesidades específicas, optimizando tus procesos y mejorando la eficiencia.</p>
+                </div>
+                <div class="glasmorphism p-6 rounded-lg shadow-lg success-card">
+                    <h3 class="text-xl font-bold">Integración de Sistemas</h3>
+                    <p class="mt-4">Conectamos tus sistemas existentes para crear un flujo de trabajo fluido y automatizado, maximizando la productividad.</p>
+                </div>
+                <div class="glasmorphism p-6 rounded-lg shadow-lg success-card">
+                    <h3 class="text-xl font-bold">Soluciones Tecnológicas Personalizadas</h3>
+                    <p class="mt-4">Ofrecemos soluciones tecnológicas a la medida para resolver tus retos específicos y impulsar el crecimiento de tu empresa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casos de Exito -->
+    <section id="casos-exito" class="py-20 bg-gray-800 text-gray-300">
+        <div class="container mx-auto max-w-[70%] rpx-4 text-center">
+            <h2 class="text-3xl font-bold gradient-title">Casos de Éxito: Clientes Satisfechos</h2>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-6 bg-gray-700 rounded-lg shadow-lg success-card">
+                    <img src="src/case1-placeholder.png" alt="Caso de éxito 1" class="w-full rounded-lg">
+                    <h3 class="text-xl font-bold text-blue-400 mt-4">Rocket Launcher</h3>
+                    <p class="mt-2">Implementación de un sistema de gestión personalizado que optimizó la eficiencia y el rendimiento de la empresa.</p>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg shadow-lg success-card">
+                    <img src="src/case2-placeholder.png" alt="Caso de éxito 2" class="w-full rounded-lg">
+                    <h3 class="text-xl font-bold text-blue-400 mt-4">Tutheh</h3>
+                    <p class="mt-2">Desarrollo de una plataforma online que mejoró la experiencia del cliente y la satisfacción general.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluciones a medida -->
+    <section id="a_medida" class="py-20 bg-gray-900 text-gray-300">
+        <div class="mx-auto max-w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Lista de métodos de contacto -->
+            <div>
+                <h2 class="text-3xl font-bold gradient-title">Contáctanos: Soluciones a tu Medida</h2>
+                <div class="mt-10 space-y-8">
+                    <!-- Item 1 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="text-4xl font-bold text-blue-400">1</div>
+                        <div>
+                            <h3 class="text-xl font-bold">Formulario de Contacto</h3>
+                            <p class="mt-2">Completa el formulario con tus datos y un breve resumen de tu proyecto.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="text-4xl font-bold text-blue-400">2</div>
+                        <div>
+                            <h3 class="text-xl font-bold">Llamada Telefónica</h3>
+                            <p class="mt-2">Comunícate con nosotros por teléfono para una consulta rápida y
+                                personalizada.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="text-4xl font-bold text-blue-400">3</div>
+                        <div>
+                            <h3 class="text-xl font-bold">Correo Electrónico</h3>
+                            <p class="mt-2">Envíanos un correo electrónico con tu solicitud y un miembro de nuestro
+                                equipo se pondrá en contacto contigo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen de contacto -->
+            <div class="flex items-center justify-center h-full">
+                <img src="src/contact-image-placeholder.png" alt="Edificio de oficinas"
+                    class="w-full h-auto max-h-96 object-cover rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-gray-800">
+        <div class="container mx-auto max-w-[70%] rpx-4 text-center mx-auto text-center">
+            <h2 class="text-3xl font-bold gradient-title">Ponte en Contacto con Nosotros</h2>
+            <p class="mt-4 text-lg">Estamos aquí para ayudarte. Completa el formulario a continuación y un representante
+                se pondrá en contacto contigo pronto.</p>
+            <form class="mt-10 space-y-6 max-w-lg mx-auto">
+                <input type="text" placeholder="Nombre"
+                    class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white">
+                <input type="email" placeholder="Correo Electrónico"
+                    class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white">
+                <textarea placeholder="Mensaje"
+                    class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white"></textarea>
+                <button type="submit"
+                    class="mt-6 inline-block py-2 px-6 rounded-lg font-bold text-white gradient-btn hover:scale-105 transition-transform duration-300">Enviar</button>
+            </form>
+            <div class="mt-10 text-lg">
+                <p>Teléfono: +54 11 4456 7890</p>
+                <p>Correo: <a href="mailto:contacto@iotek.com.ar"
+                        class="text-blue-400 hover:underline">contacto@iotek.com.ar</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Iotek Soluciones SA. Todos los derechos reservados.</p>
+            <div class="mt-4">
+                <a href="#" class="text-blue-400 mx-2 hover:underline">LinkedIn</a>
+                <a href="#" class="text-blue-400 mx-2 hover:underline">Twitter</a>
+                <a href="#" class="text-blue-400 mx-2 hover:underline">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
