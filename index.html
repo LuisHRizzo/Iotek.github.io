@@ -9,6 +9,7 @@
     <meta name="author" content="Iotek Soluciones SA">
     <title>Iotek Soluciones SA</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -16,7 +17,7 @@
 
     <!-- Header -->
     <header class="bg-blue-400 shadow-lg">
-        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center px-6">
             <img src="src/logo.png" alt="Iotek Logo" class="h-16">
 
             <!-- Botón hamburguesa -->
@@ -29,23 +30,20 @@
             <!-- Navegación -->
             <nav id="menu" class="hidden md:flex space-x-6 text-black">
                 <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
-                    <li><a href="#inicio" class="text-black hover:text-blue-400">Inicio</a></li>
-                    <li><a href="#sobre-nosotros" class="hover:text-blue-400">Sobre Nosotros</a></li>
-                    <li><a href="#servicios" class="hover:text-blue-400">Servicios</a></li>
-                    <li><a href="#casos-exito" class="hover:text-blue-400">Casos de Éxito</a></li>
-                    <li><a href="#contacto" class="hover:text-blue-400">Contacto</a></li>
+                    <li><a href="#inicio" class="text-black hover:text-indigo-700">Inicio</a></li>
+                    <li><a href="#sobre-nosotros" class="hover:indigo-700">Sobre Nosotros</a></li>
+                    <li><a href="#servicios" class="hover:indigo-700">Servicios</a></li>
+                    <li><a href="#casos-exito" class="hover:indigo-700">Casos de Éxito</a></li>
+                    <li><a href="#contacto" class="hover:indigo-700">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="inicio" class="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center">
-        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
-            <source src="src/video.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de video.
-        </video>
-        <div class="absolute inset-0 bg-black bg-opacity-2git add README.md0"></div> <!-- Filtro de opacidad sobre el fondo -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center"
+    style="background-image: url('src/hero.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-30"></div>
         <div class="relative z-10 px-4">
             <h1 class="text-4xl md:text-6xl font-bold gradient-title">Bienvenido a Iotek: Servicios Tecnológicos de Vanguardia</h1>
             <p class="mt-4 text-lg">Iotek ofrece soluciones tecnológicas innovadoras para impulsar tu negocio hacia el éxito.</p>
@@ -175,6 +173,7 @@
 
     <!-- Contacto -->
     <section id="contacto" class="py-20 bg-gray-800">
+        
         <div class="container mx-auto max-w-[70%] rpx-4 text-center mx-auto text-center">
             <h2 class="text-3xl font-bold gradient-title">Ponte en Contacto con Nosotros</h2>
             <p class="mt-4 text-lg">Estamos aquí para ayudarte. Completa el formulario a continuación y un representante
@@ -198,7 +197,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
+    <footer class="glasmorphism py-6 mt-10">
         <div class="container mx-auto text-center">
             <p>&copy; 2025 Iotek Soluciones SA. Todos los derechos reservados.</p>
             <div class="mt-4">
@@ -208,7 +207,16 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menu-toggle");
+            const menu = document.getElementById("menu");
+    
+            menuToggle.addEventListener("click", function () {
+                menu.classList.toggle("hidden");
+            });
+        });
+    </script>
 </body>
 
 </html>
