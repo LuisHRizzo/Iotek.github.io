@@ -11,18 +11,24 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Library for scroll animations -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Particles.js for Hero background -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 
 <body class="bg-gray-900 text-gray-300 font-sans">
 
     <!-- Header -->
-    <header class="bg-blue-400 shadow-lg">
-        <div class="container mx-auto flex justify-between items-center px-6">
-            <img src="src/logo.png" alt="Iotek Logo" class="h-16">
+    <header id="header" class="bg-blue-400 shadow-lg fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center px-6 py-4 transition-all duration-300">
+            <img src="src/logo.png" alt="Iotek Logo" class="h-12 md:h-16">
 
             <!-- Botón hamburguesa -->
             <button id="menu-toggle" class="block md:hidden focus:outline-none">
-                <svg class="w-8 h-8 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-8 h-8 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
@@ -30,34 +36,42 @@
             <!-- Navegación -->
             <nav id="menu" class="hidden md:flex space-x-6 text-black">
                 <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
-                    <li><a href="#inicio" class="text-black hover:text-indigo-700">Inicio</a></li>
-                    <li><a href="#sobre-nosotros" class="hover:indigo-700">Sobre Nosotros</a></li>
-                    <li><a href="#servicios" class="hover:indigo-700">Servicios</a></li>
-                    <li><a href="#casos-exito" class="hover:indigo-700">Casos de Éxito</a></li>
-                    <li><a href="#contacto" class="hover:indigo-700">Contacto</a></li>
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#casos-exito" class="nav-link">Casos de Éxito</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="inicio" class="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center"
-    style="background-image: url('src/hero.png');">
-    <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+    <section id="inicio"
+        class="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center"
+        style="background: url('src/hero.png');">
+        <div id="particles-js" class="absolute inset-0"></div>
+        <div class="absolute inset-0 bg-black bg-opacity-10"></div>
         <div class="relative z-10 px-4">
-            <h1 class="text-4xl md:text-6xl font-bold gradient-title">Bienvenido a Iotek: Servicios Tecnológicos de Vanguardia</h1>
-            <p class="mt-4 text-lg">Iotek ofrece soluciones tecnológicas innovadoras para impulsar tu negocio hacia el éxito.</p>
-            <a href="#contacto" class="mt-6 inline-block py-2 px-6 rounded-lg font-bold text-white gradient-btn hover:scale-105 transition-transform duration-300">Descubre Nuestros Servicios</a>
+            <h1 class="text-4xl md:text-8xl font-bold gradient-title" data-aos="fade-down">Bienvenido a Iotek: Servicios
+                Tecnológicos de Vanguardia</h1>
+                <br>
+            <p class="mt-4 text-2xl" data-aos="fade-up">Iotek ofrece soluciones tecnológicas innovadoras para impulsar tu
+                negocio hacia el éxito.</p>
+            <a href="#contacto"
+                class="mt-6 inline-block py-2 px-6 rounded-lg font-bold text-white gradient-btn hover:scale-105 ripple-effect transition-transform duration-300">Descubre
+                Nuestros Servicios</a>
         </div>
     </section>
 
     <!-- Sobre Nosotros -->
     <section id="sobre-nosotros" class="py-20 bg-blue-400 text-gray-900">
         <div class="container mx-auto max-w-[70%] px-4">
-            <h2 class="text-3xl font-bold gradient-title text-center">Sobre Nosotros: Liderando la Transformación Digital</h2>
+            <h2 class="text-3xl md:text-5xl font-bold gradient-title text-center" data-aos="fade-right">Sobre Nosotros: Liderando la
+                Transformación Digital</h2>
             <div class="container grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-10">
                 <!-- Pirámide -->
-                <div class="flex justify-center">
+                <div class="flex justify-center" data-aos="zoom-in">
                     <svg width="240" height="300" viewBox="0 0 100 100" class="w-64 h-auto">
                         <polygon points="50,0 34,31 66,31" fill="#1f2937" />
                         <text x="50" y="20" text-anchor="middle" fill="white" font-size="10" font-weight="bold">1</text>
@@ -68,130 +82,81 @@
                     </svg>
                 </div>
                 <!-- Descripciones -->
-                <div class="space-y-8">
+                <div class="space-y-8" data-aos="fade-left">
                     <div>
-                        <h3 class="text-xl font-bold">Experiencia</h3>
-                        <p class="mt-2">Con años de experiencia en el sector, ofrecemos un profundo conocimiento y una visión estratégica.</p>
+                        <h3 class="text-2xl font-bold">Experiencia</h3>
+                        <p class="mt-2">Con años de experiencia en el sector, ofrecemos un profundo conocimiento y una
+                            visión estratégica.</p>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold">Innovación</h3>
-                        <p class="mt-2">Estamos comprometidos con la innovación constante, utilizando las últimas tecnologías para ofrecerte soluciones de vanguardia.</p>
+                        <h3 class="text-2xl font-bold">Innovación</h3>
+                        <p class="mt-2">Estamos comprometidos con la innovación constante, utilizando las últimas
+                            tecnologías para ofrecerte soluciones de vanguardia.</p>
                     </div>
                     <div>
-                        <h3 class="text-xl font-bold">Pasión</h3>
-                        <p class="mt-2">Nuestra pasión por la tecnología y el compromiso con el éxito de nuestros clientes nos impulsa a superarnos.</p>
+                        <h3 class="text-2xl font-bold">Pasión</h3>
+                        <p class="mt-2">Nuestra pasión por la tecnología y el compromiso con el éxito de nuestros
+                            clientes nos impulsa a superarnos.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Servicios -->
-    <section id="servicios" class="py-20 bg-blue-400 text-gray-900">
+     <!-- Servicios -->
+     <section id="servicios" class="py-20 bg-blue-400 text-gray-900">
         <div class="container mx-auto max-w-[70%] px-4 text-center">
-            <h2 class="text-3xl font-bold gradient-title">Descripción General de Nuestros Servicios</h2>
-            
+            <h2 class="text-3xl md:text-5xl font-bold gradient-title" data-aos="fade-up">Descripción General de Nuestros Servicios</h2>
             <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="glasmorphism p-6 rounded-lg shadow-lg success-card">
-                    <h3 class="text-xl font-bold">Desarrollo de Software</h3>
+                <div class="glasmorphism p-6 rounded-lg shadow-lg success-card" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold">Desarrollo de Software</h3>
                     <p class="mt-4">Desarrollamos software personalizado que se adapta a tus necesidades específicas, optimizando tus procesos y mejorando la eficiencia.</p>
                 </div>
-                <div class="glasmorphism p-6 rounded-lg shadow-lg success-card">
-                    <h3 class="text-xl font-bold">Integración de Sistemas</h3>
+                <div class="glasmorphism p-6 rounded-lg shadow-lg success-card" data-aos="fade-up">
+                    <h3 class="text-2xl font-bold">Integración de Sistemas</h3>
                     <p class="mt-4">Conectamos tus sistemas existentes para crear un flujo de trabajo fluido y automatizado, maximizando la productividad.</p>
                 </div>
-                <div class="glasmorphism p-6 rounded-lg shadow-lg success-card">
-                    <h3 class="text-xl font-bold">Soluciones Tecnológicas Personalizadas</h3>
+                <div class="glasmorphism p-6 rounded-lg shadow-lg success-card" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold">Soluciones Tecnológicas Personalizadas</h3>
                     <p class="mt-4">Ofrecemos soluciones tecnológicas a la medida para resolver tus retos específicos y impulsar el crecimiento de tu empresa.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Casos de Exito -->
+    <!-- Casos de Éxito -->
     <section id="casos-exito" class="py-20 bg-gray-800 text-gray-300">
-        <div class="container mx-auto max-w-[70%] rpx-4 text-center">
-            <h2 class="text-3xl font-bold gradient-title">Casos de Éxito: Clientes Satisfechos</h2>
+        <div class="container mx-auto max-w-[70%] px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold gradient-title" data-aos="fade-up">Casos de Éxito: Clientes Satisfechos</h2>
             <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="p-6 bg-gray-700 rounded-lg shadow-lg success-card">
+                <div class="p-6 bg-gray-700 rounded-lg shadow-lg success-card" data-aos="fade-right">
                     <img src="src/case1-placeholder.png" alt="Caso de éxito 1" class="w-full rounded-lg">
-                    <h3 class="text-xl font-bold text-blue-400 mt-4">Rocket Launcher</h3>
+                    <h3 class="text-2xl font-bold text-blue-400 mt-4">Rocket Launcher</h3>
                     <p class="mt-2">Implementación de un sistema de gestión personalizado que optimizó la eficiencia y el rendimiento de la empresa.</p>
                 </div>
-                <div class="p-6 bg-gray-700 rounded-lg shadow-lg success-card">
+                <div class="p-6 bg-gray-700 rounded-lg shadow-lg success-card" data-aos="fade-left">
                     <img src="src/case2-placeholder.png" alt="Caso de éxito 2" class="w-full rounded-lg">
-                    <h3 class="text-xl font-bold text-blue-400 mt-4">Tutheh</h3>
+                    <h3 class="text-2xl font-bold text-blue-400 mt-4">Tutheh</h3>
                     <p class="mt-2">Desarrollo de una plataforma online que mejoró la experiencia del cliente y la satisfacción general.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Soluciones a medida -->
-    <section id="a_medida" class="py-20 bg-gray-900 text-gray-300">
-        <div class="mx-auto max-w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <!-- Lista de métodos de contacto -->
-            <div>
-                <h2 class="text-3xl font-bold gradient-title">Contáctanos: Soluciones a tu Medida</h2>
-                <div class="mt-10 space-y-8">
-                    <!-- Item 1 -->
-                    <div class="flex items-start space-x-4">
-                        <div class="text-4xl font-bold text-blue-400">1</div>
-                        <div>
-                            <h3 class="text-xl font-bold">Formulario de Contacto</h3>
-                            <p class="mt-2">Completa el formulario con tus datos y un breve resumen de tu proyecto.</p>
-                        </div>
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="flex items-start space-x-4">
-                        <div class="text-4xl font-bold text-blue-400">2</div>
-                        <div>
-                            <h3 class="text-xl font-bold">Llamada Telefónica</h3>
-                            <p class="mt-2">Comunícate con nosotros por teléfono para una consulta rápida y
-                                personalizada.</p>
-                        </div>
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="flex items-start space-x-4">
-                        <div class="text-4xl font-bold text-blue-400">3</div>
-                        <div>
-                            <h3 class="text-xl font-bold">Correo Electrónico</h3>
-                            <p class="mt-2">Envíanos un correo electrónico con tu solicitud y un miembro de nuestro
-                                equipo se pondrá en contacto contigo.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Imagen de contacto -->
-            <div class="flex items-center justify-center h-full">
-                <img src="src/contact-image-placeholder.png" alt="Edificio de oficinas"
-                    class="w-full h-auto max-h-96 object-cover rounded-lg shadow-lg">
-            </div>
-        </div>
-    </section>
-
     <!-- Contacto -->
     <section id="contacto" class="py-20 bg-gray-800">
-        
-        <div class="container mx-auto max-w-[70%] rpx-4 text-center mx-auto text-center">
-            <h2 class="text-3xl font-bold gradient-title">Ponte en Contacto con Nosotros</h2>
-            <p class="mt-4 text-lg">Estamos aquí para ayudarte. Completa el formulario a continuación y un representante
-                se pondrá en contacto contigo pronto.</p>
+        <div class="container mx-auto max-w-[70%] px-4 text-center">
+            <h2 class="text-3xl font-bold gradient-title" data-aos="fade-up">Ponte en Contacto con Nosotros</h2>
+            <p class="mt-4 text-lg" data-aos="fade-right">Estamos aquí para ayudarte. Completa el formulario a continuación y un representante se pondrá en contacto contigo pronto.</p>
             <form class="mt-10 space-y-6 max-w-lg mx-auto">
-                <input type="text" placeholder="Nombre"
-                    class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white">
-                <input type="email" placeholder="Correo Electrónico"
-                    class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white">
-                <textarea placeholder="Mensaje"
-                    class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white"></textarea>
-                <button type="submit"
-                    class="mt-6 inline-block py-2 px-6 rounded-lg font-bold text-white gradient-btn hover:scale-105 transition-transform duration-300">Enviar</button>
+                <input type="text" placeholder="Nombre" class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white">
+                <input type="email" placeholder="Correo Electrónico" class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white">
+                <textarea placeholder="Mensaje" class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white"></textarea>
+                <button type="submit" class="mt-6 inline-block py-2 px-6 rounded-lg font-bold text-white gradient-btn ripple-effect hover:scale-105 transition-transform duration-300">Enviar</button>
             </form>
             <div class="mt-10 text-lg">
                 <p>Teléfono: +54 11 4456 7890</p>
-                <p>Correo: <a href="mailto:contacto@iotek.com.ar"
-                        class="text-blue-400 hover:underline">contacto@iotek.com.ar</a></p>
+                <p>Correo: <a href="mailto:contacto@iotek.com.ar" class="text-blue-400 hover:underline">contacto@iotek.com.ar</a></p>
             </div>
         </div>
     </section>
@@ -207,15 +172,59 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scripts -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const menuToggle = document.getElementById("menu-toggle");
             const menu = document.getElementById("menu");
-    
+            const header = document.getElementById("header");
+
             menuToggle.addEventListener("click", function () {
                 menu.classList.toggle("hidden");
             });
+
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 50) {
+                    header.classList.add("bg-blue-600", "py-2");
+                    header.classList.remove("py-4");
+                } else {
+                    header.classList.remove("bg-blue-600", "py-2");
+                    header.classList.add("py-4");
+                }
+            });
+
+            // Initialize AOS
+            AOS.init({
+                duration: 1000,
+                once: true,
+            });
+
+            // Initialize Particles.js
+            particlesJS.load('particles-js', 'particles.json', function() {
+                console.log('Particles.js config loaded');
+            });
         });
+
+        document.querySelectorAll('.ripple-effect').forEach(button => {
+    button.addEventListener('click', function (e) {
+        const ripple = document.createElement('span');
+        const rect = button.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        const x = e.clientX - rect.left - size / 2;
+        const y = e.clientY - rect.top - size / 2;
+
+        ripple.style.width = ripple.style.height = `${size}px`;
+        ripple.style.left = `${x}px`;
+        ripple.style.top = `${y}px`;
+
+        button.appendChild(ripple);
+
+        // Eliminar el span después de la animación
+        ripple.addEventListener('animationend', () => ripple.remove());
+    });
+});
+
     </script>
 </body>
 
