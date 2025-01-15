@@ -47,56 +47,41 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="inicio"
-        class="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center"
-        style="background: url('src/hero.png');">
+    <section id="inicio" class="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center" style="background: url('src/hero.png');">
         <div id="particles-js" class="absolute inset-0"></div>
         <div class="absolute inset-0 bg-black bg-opacity-10"></div>
         <div class="relative z-10 px-4">
-            <h1 class="text-4xl md:text-8xl font-bold gradient-title" data-aos="fade-down">Bienvenido a Iotek: Servicios
-                Tecnológicos de Vanguardia</h1>
-                <br>
-            <p class="mt-4 text-2xl" data-aos="fade-up">Iotek ofrece soluciones tecnológicas innovadoras para impulsar tu
-                negocio hacia el éxito.</p>
-            <a href="#contacto"
-                class="mt-6 inline-block py-2 px-6 rounded-lg font-bold text-white gradient-btn hover:scale-105 ripple-effect transition-transform duration-300">Descubre
-                Nuestros Servicios</a>
+            <h1 class="text-4xl md:text-6xl font-bold gradient-title" data-aos="fade-down">Innovación y Confianza en Soluciones Tecnológicas</h1>
+            <p class="mt-4 text-xl" data-aos="fade-up">En Iotek soluciones SA, somos expertos en integrar tecnología avanzada para garantizar la seguridad de tu empresa. Desde la instalación de cámaras y servidores hasta consultoría personalizada, trabajamos contigo para crear sistemas que inspiren confianza y modernidad.</p>
+            <a href="#contacto" class="mt-6 inline-block py-2 px-6 rounded-lg font-bold text-white gradient-btn ripple-effect hover:scale-105 transition-transform duration-300">Descubre Nuestros Servicios</a>
         </div>
     </section>
 
     <!-- Sobre Nosotros -->
     <section id="sobre-nosotros" class="py-20 bg-blue-400 text-gray-900">
         <div class="container mx-auto max-w-[70%] px-4">
-            <h2 class="text-3xl md:text-5xl font-bold gradient-title text-center" data-aos="fade-right">Sobre Nosotros: Liderando la
-                Transformación Digital</h2>
-            <div class="container grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-10">
-                <!-- Pirámide -->
-                <div class="flex justify-center" data-aos="zoom-in">
-                    <svg width="240" height="300" viewBox="0 0 100 100" class="w-64 h-auto">
-                        <polygon points="50,0 34,31 66,31" fill="#1f2937" />
-                        <text x="50" y="20" text-anchor="middle" fill="white" font-size="10" font-weight="bold">1</text>
-                        <polygon points="32,36 68,36 82,65 18,65" fill="#1f2937" />
-                        <text x="50" y="52" text-anchor="middle" fill="white" font-size="10" font-weight="bold">2</text>
-                        <polygon points="16,70 84,70 100,100 0,100" fill="#1f2937" />
-                        <text x="50" y="88" text-anchor="middle" fill="white" font-size="10" font-weight="bold">3</text>
-                    </svg>
+            <h2 class="text-3xl md:text-5xl font-bold gradient-title text-center" data-aos="fade-right">Conoce a Iotek Soluciones SA</h2>
+            <div class="container grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-10">
+                <!-- Card con imagen o video -->
+                <div class="glasmorphism p-6 rounded-lg shadow-lg" data-aos="fade-right">
+                    <video autoplay loop muted playsinline class="w-full rounded-lg">
+                        <source src="src/video.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de videos.
+                    </video>
                 </div>
                 <!-- Descripciones -->
                 <div class="space-y-8" data-aos="fade-left">
                     <div>
-                        <h3 class="text-2xl font-bold">Experiencia</h3>
-                        <p class="mt-2">Con años de experiencia en el sector, ofrecemos un profundo conocimiento y una
-                            visión estratégica.</p>
+                        <h3 class="text-4xl font-bold">¿Quiénes somos?</h3>
+                        <p class="mt-2 text-lg">Somos una compañía líder en soluciones tecnológicas y seguridad. Con años de experiencia en el sector, combinamos tecnología de vanguardia con un compromiso inquebrantable hacia nuestros clientes.</p>
                     </div>
                     <div>
-                        <h3 class="text-2xl font-bold">Innovación</h3>
-                        <p class="mt-2">Estamos comprometidos con la innovación constante, utilizando las últimas
-                            tecnologías para ofrecerte soluciones de vanguardia.</p>
+                        <h3 class="text-4xl font-bold">Misión</h3>
+                        <p class="mt-2 text-lg">Proteger lo que más importa, ofreciendo soluciones personalizadas y confiables.</p>
                     </div>
                     <div>
-                        <h3 class="text-2xl font-bold">Pasión</h3>
-                        <p class="mt-2">Nuestra pasión por la tecnología y el compromiso con el éxito de nuestros
-                            clientes nos impulsa a superarnos.</p>
+                        <h3 class="text-4xl font-bold">Visión</h3>
+                        <p class="mt-2 text-lg">Ser el integrador de tecnología en seguridad preferido en la región, reconocido por nuestra innovación y atención al cliente.</p>
                     </div>
                 </div>
             </div>
@@ -105,20 +90,50 @@
 
      <!-- Servicios -->
      <section id="servicios" class="py-20 bg-blue-400 text-gray-900">
-        <div class="container mx-auto max-w-[70%] px-4 text-center">
-            <h2 class="text-3xl md:text-5xl font-bold gradient-title" data-aos="fade-up">Descripción General de Nuestros Servicios</h2>
-            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="glasmorphism p-6 rounded-lg shadow-lg success-card" data-aos="fade-right">
-                    <h3 class="text-2xl font-bold">Desarrollo de Software</h3>
-                    <p class="mt-4">Desarrollamos software personalizado que se adapta a tus necesidades específicas, optimizando tus procesos y mejorando la eficiencia.</p>
+        <div class="mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold gradient-title text-center" data-aos="fade-up">Soluciones Tecnológicas a Tu Medida</h2>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2">
+                <div class="service-card" style="background-image: url('src/cameras.png');" data-aos="fade-right">
+                    Instalación de Cámaras de Seguridad
+                    <div class="service-card-content">
+                        <p class="text-lg">Provisión e instalación de cámaras IP, analógicas, domo, y PTZ.</p>
+                        <p class="text-lg">Configuración avanzada y puesta en marcha para monitoreo eficaz.</p>
+                    </div>
                 </div>
-                <div class="glasmorphism p-6 rounded-lg shadow-lg success-card" data-aos="fade-up">
-                    <h3 class="text-2xl font-bold">Integración de Sistemas</h3>
-                    <p class="mt-4">Conectamos tus sistemas existentes para crear un flujo de trabajo fluido y automatizado, maximizando la productividad.</p>
+                <div class="service-card" style="background-image: url('src/servidores.png');" data-aos="fade-left">
+                    Configuración de Servidores
+                    <div class="service-card-content">
+                        <p class="text-lg">Implementación de servidores seguros y eficientes.</p>
+                        <p class="text-lg">Soporte completo desde la instalación hasta el mantenimiento.</p>
+                    </div>
                 </div>
-                <div class="glasmorphism p-6 rounded-lg shadow-lg success-card" data-aos="fade-left">
-                    <h3 class="text-2xl font-bold">Soluciones Tecnológicas Personalizadas</h3>
-                    <p class="mt-4">Ofrecemos soluciones tecnológicas a la medida para resolver tus retos específicos y impulsar el crecimiento de tu empresa.</p>
+                <div class="service-card" style="background-image: url('src/support.png');" data-aos="fade-right">
+                    Mantenimiento y Soporte Técnico
+                    <div class="service-card-content">
+                        <p class="text-lg">Planes preventivos y correctivos para mantener tus sistemas al día.</p>
+                        <p class="text-lg">Asistencia técnica 24/7 con personal altamente capacitado.</p>
+                    </div>
+                </div>
+                <div class="service-card" style="background-image: url('src/consulting.png');" data-aos="fade-left">
+                    Consultoría en Seguridad
+                    <div class="service-card-content">
+                        <p class="text-lg">Evaluación integral de riesgos.</p>
+                        <p class="text-lg">Diseño de sistemas de seguridad personalizados según tus necesidades.</p>
+                    </div>
+                </div>
+                <div class="service-card justify-center" style="background-image: url('src/equipment.png');" data-aos="fade-right">
+                    Equipos a Comodato
+                    <div class="service-card-content">
+                        <p class="text-lg">Amplia gama de cámaras y grabadores disponibles.</p>
+                        <p class="text-lg">Flexibilidad en contratos y opciones adaptadas a tus requerimientos.</p>
+                    </div>
+                </div>
+                <div class="service-card" style="background-image: url('src/networks.png');" data-aos="fade-left">
+                    Redes y Conectividad
+                    <div class="service-card-content">
+                        <p class="text-lg">Diseño e implementación de redes LAN y Wi-Fi seguras y de alto rendimiento.</p>
+                        <p class="text-lg">Optimización y monitoreo continuo para asegurar el máximo tiempo de actividad.</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -173,7 +173,42 @@ section {
         grid-template-columns: 1fr;
     }
 }
+/* Cards de servicios */
+.service-card {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+}
 
+.service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    transition: background 0.5s ease;
+}
+
+.service-card:hover::before {
+    background: rgba(0, 0, 0, 0);
+}
+
+.service-card-content {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.service-card:hover .service-card-content {
+    opacity: 1;
+}
 /* Pyramid SVG */
 #sobre-nosotros svg {
     width: 240px;
