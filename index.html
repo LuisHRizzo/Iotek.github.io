@@ -13,9 +13,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- AOS Library for scroll animations -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <!-- Particles.js for Hero background -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("Iotek"); // Reemplaza "TU_USER_ID" por tu User ID de EmailJS
+        })();
+    </script>
+
 </head>
 
 <body class="bg-gray-900 text-gray-300 font-sans">
@@ -47,20 +57,29 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="inicio" class="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center" style="background: url('src/hero.png');">
+    <section id="inicio"
+        class="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center"
+        style="background: url('src/hero.png');">
         <div id="particles-js" class="absolute inset-0"></div>
         <div class="absolute inset-0 bg-black bg-opacity-10"></div>
         <div class="relative z-10 px-4">
-            <h1 class="text-4xl md:text-6xl font-bold gradient-title" data-aos="fade-down">Innovación y Confianza en Soluciones Tecnológicas</h1>
-            <p class="mt-4 text-xl" data-aos="fade-up">En Iotek soluciones SA, somos expertos en integrar tecnología avanzada para garantizar la seguridad de tu empresa. Desde la instalación de cámaras y servidores hasta consultoría personalizada, trabajamos contigo para crear sistemas que inspiren confianza y modernidad.</p>
-            <a href="#contacto" class="mt-6 inline-block py-2 px-6 rounded-lg font-bold text-white gradient-btn ripple-effect hover:scale-105 transition-transform duration-300">Descubre Nuestros Servicios</a>
+            <h1 class="text-4xl md:text-6xl font-bold gradient-title" data-aos="fade-down">Innovación y Confianza en
+                Soluciones Tecnológicas</h1>
+            <p class="mt-4 text-xl" data-aos="fade-up">En Iotek soluciones SA, somos expertos en integrar tecnología
+                avanzada para garantizar la seguridad de tu empresa. Desde la instalación de cámaras y servidores hasta
+                consultoría personalizada, trabajamos contigo para crear sistemas que inspiren confianza y modernidad.
+            </p>
+            <a href="#contacto"
+                class="mt-6 inline-block py-2 px-6 rounded-lg font-bold text-white gradient-btn ripple-effect hover:scale-105 transition-transform duration-300">Descubre
+                Nuestros Servicios</a>
         </div>
     </section>
 
     <!-- Sobre Nosotros -->
     <section id="sobre-nosotros" class="py-20 bg-blue-400 text-gray-900">
         <div class="container mx-auto max-w-[70%] px-4">
-            <h2 class="text-3xl md:text-5xl font-bold gradient-title text-center" data-aos="fade-right">Conoce a Iotek Soluciones SA</h2>
+            <h2 class="text-3xl md:text-5xl font-bold gradient-title text-center" data-aos="fade-right">Conoce a Iotek
+                Soluciones SA</h2>
             <div class="container grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-10">
                 <!-- Card con imagen o video -->
                 <div class="glasmorphism p-6 rounded-lg shadow-lg" data-aos="fade-right">
@@ -73,25 +92,30 @@
                 <div class="space-y-8" data-aos="fade-left">
                     <div>
                         <h3 class="text-4xl font-bold">¿Quiénes somos?</h3>
-                        <p class="mt-2 text-lg">Somos una compañía líder en soluciones tecnológicas y seguridad. Con años de experiencia en el sector, combinamos tecnología de vanguardia con un compromiso inquebrantable hacia nuestros clientes.</p>
+                        <p class="mt-2 text-lg">Somos una compañía líder en soluciones tecnológicas y seguridad. Con
+                            años de experiencia en el sector, combinamos tecnología de vanguardia con un compromiso
+                            inquebrantable hacia nuestros clientes.</p>
                     </div>
                     <div>
                         <h3 class="text-4xl font-bold">Misión</h3>
-                        <p class="mt-2 text-lg">Proteger lo que más importa, ofreciendo soluciones personalizadas y confiables.</p>
+                        <p class="mt-2 text-lg">Proteger lo que más importa, ofreciendo soluciones personalizadas y
+                            confiables.</p>
                     </div>
                     <div>
                         <h3 class="text-4xl font-bold">Visión</h3>
-                        <p class="mt-2 text-lg">Ser el integrador de tecnología en seguridad preferido en la región, reconocido por nuestra innovación y atención al cliente.</p>
+                        <p class="mt-2 text-lg">Ser el integrador de tecnología en seguridad preferido en la región,
+                            reconocido por nuestra innovación y atención al cliente.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-     <!-- Servicios -->
-     <section id="servicios" class="py-20 bg-blue-400 text-gray-900">
+    <!-- Servicios -->
+    <section id="servicios" class="py-20 bg-blue-400 text-gray-900">
         <div class="mx-auto px-4">
-            <h2 class="text-3xl md:text-5xl font-bold gradient-title text-center" data-aos="fade-up">Soluciones Tecnológicas a Tu Medida</h2>
+            <h2 class="text-3xl md:text-5xl font-bold gradient-title text-center" data-aos="fade-up">Soluciones
+                Tecnológicas a Tu Medida</h2>
             <div class="mt-10 grid grid-cols-1 md:grid-cols-2">
                 <div class="service-card" style="background-image: url('src/cameras.png');" data-aos="fade-right">
                     Instalación de Cámaras de Seguridad
@@ -121,7 +145,8 @@
                         <p class="text-lg">Diseño de sistemas de seguridad personalizados según tus necesidades.</p>
                     </div>
                 </div>
-                <div class="service-card justify-center" style="background-image: url('src/equipment.png');" data-aos="fade-right">
+                <div class="service-card justify-center" style="background-image: url('src/equipment.png');"
+                    data-aos="fade-right">
                     Equipos a Comodato
                     <div class="service-card-content">
                         <p class="text-lg">Amplia gama de cámaras y grabadores disponibles.</p>
@@ -131,8 +156,10 @@
                 <div class="service-card" style="background-image: url('src/networks.png');" data-aos="fade-left">
                     Redes y Conectividad
                     <div class="service-card-content">
-                        <p class="text-lg">Diseño e implementación de redes LAN y Wi-Fi seguras y de alto rendimiento.</p>
-                        <p class="text-lg">Optimización y monitoreo continuo para asegurar el máximo tiempo de actividad.</p>
+                        <p class="text-lg">Diseño e implementación de redes LAN y Wi-Fi seguras y de alto rendimiento.
+                        </p>
+                        <p class="text-lg">Optimización y monitoreo continuo para asegurar el máximo tiempo de
+                            actividad.</p>
                     </div>
                 </div>
             </div>
@@ -142,17 +169,74 @@
     <!-- Casos de Éxito -->
     <section id="casos-exito" class="py-20 bg-gray-800 text-gray-300">
         <div class="container mx-auto max-w-[70%] px-4 text-center">
-            <h2 class="text-3xl md:text-5xl font-bold gradient-title" data-aos="fade-up">Casos de Éxito: Clientes Satisfechos</h2>
+            <h2 class="text-3xl md:text-5xl font-bold gradient-title text-center" data-aos="fade-up">Nuestra
+                Experiencia, Tu Tranquilidad</h2>
+            <p class="mt-4 text-xl md:text-3xl" data-aos="fade-right">Descubre cómo hemos ayudado a empresas como la
+                tuya a implementar sistemas de seguridad innovadores y confiables. Cada proyecto refleja nuestro
+                compromiso con la calidad y la satisfacción del cliente.</p>
             <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="p-6 bg-gray-700 rounded-lg shadow-lg success-card" data-aos="fade-right">
-                    <img src="src/case1-placeholder.png" alt="Caso de éxito 1" class="w-full rounded-lg">
-                    <h3 class="text-2xl font-bold text-blue-400 mt-4">Rocket Launcher</h3>
-                    <p class="mt-2">Implementación de un sistema de gestión personalizado que optimizó la eficiencia y el rendimiento de la empresa.</p>
+                    <img src="src/case1-placeholder.png" alt="Caso de éxito Empresa X"
+                        class="w-full h-40 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-bold text-blue-400">Cliente: Empresa X</h3>
+                        <p class="mt-2"><strong>Proyecto:</strong> Instalación de cámaras en múltiples sedes.</p>
+                        <p><strong>Resultado:</strong> Incremento en la seguridad operativa y reducción de incidentes en
+                            un 40%.</p>
+                    </div>
                 </div>
                 <div class="p-6 bg-gray-700 rounded-lg shadow-lg success-card" data-aos="fade-left">
-                    <img src="src/case2-placeholder.png" alt="Caso de éxito 2" class="w-full rounded-lg">
-                    <h3 class="text-2xl font-bold text-blue-400 mt-4">Tutheh</h3>
-                    <p class="mt-2">Desarrollo de una plataforma online que mejoró la experiencia del cliente y la satisfacción general.</p>
+                    <img src="src/case2-placeholder.png" alt="Caso de éxito Compañía Y"
+                        class="w-full h-40 object-cover rounded-t-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-bold text-blue-400">Cliente: Compañía Y</h3>
+                        <p class="mt-2"><strong>Proyecto:</strong> Configuración de servidores y soporte técnico.</p>
+                        <p><strong>Resultado:</strong> Infraestructura tecnológica más estable y optimizada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios de Elegirnos -->
+    <section id="beneficios" class="py-20 bg-gray-900 text-gray-300">
+        <div class="container mx-auto max-w-[70%] px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold gradient-title" data-aos="fade-up">¿Por Qué Iotek?</h2>
+            <p class="mt-4 text-lg" data-aos="fade-right">Descubre los beneficios de elegirnos como tu socio tecnológico
+                de confianza. Combinamos experiencia, innovación y soporte continuo para ofrecerte soluciones a tu
+                medida.</p>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 bg-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-2"
+                    data-aos="fade-up">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">Experiencia</h3>
+                    <p class="mt-2">Décadas de trayectoria en soluciones de seguridad.</p>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-2"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">Innovación</h3>
+                    <p class="mt-2">Tecnología avanzada al servicio de tu tranquilidad.</p>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-2"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">Flexibilidad</h3>
+                    <p class="mt-2">Opciones adaptadas a tus necesidades, ya sea comodato, compra o leasing.</p>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-2"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">Soporte Continuo</h3>
+                    <p class="mt-2">Atención al cliente dedicada 24/7.</p>
                 </div>
             </div>
         </div>
@@ -162,16 +246,23 @@
     <section id="contacto" class="py-20 bg-gray-800">
         <div class="container mx-auto max-w-[70%] px-4 text-center">
             <h2 class="text-3xl font-bold gradient-title" data-aos="fade-up">Ponte en Contacto con Nosotros</h2>
-            <p class="mt-4 text-lg" data-aos="fade-right">Estamos aquí para ayudarte. Completa el formulario a continuación y un representante se pondrá en contacto contigo pronto.</p>
-            <form class="mt-10 space-y-6 max-w-lg mx-auto">
-                <input type="text" placeholder="Nombre" class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white">
-                <input type="email" placeholder="Correo Electrónico" class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white">
-                <textarea placeholder="Mensaje" class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white"></textarea>
-                <button type="submit" class="mt-6 inline-block py-2 px-6 rounded-lg font-bold text-white gradient-btn ripple-effect hover:scale-105 transition-transform duration-300">Enviar</button>
+            <p class="mt-4 text-lg" data-aos="fade-right">Estamos aquí para ayudarte. Completa el formulario a
+                continuación y un representante se pondrá en contacto contigo pronto.</p>
+            <form id="contact-form" class="mt-10 space-y-6 max-w-lg mx-auto">
+                <input type="text" placeholder="Nombre" name="from_name"
+                    class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white" required>
+                <input type="email" placeholder="Correo Electrónico" name="reply_to"
+                    class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white" required>
+                <textarea placeholder="Mensaje" name="message"
+                    class="w-full p-4 border border-gray-700 rounded-lg bg-gray-900 text-white" required></textarea>
+                <button type="submit"
+                    class="mt-6 inline-block py-2 px-6 rounded-lg font-bold text-white gradient-btn ripple-effect hover:scale-105 transition-transform duration-300">Enviar</button>
             </form>
+
             <div class="mt-10 text-lg">
                 <p>Teléfono: +54 11 4456 7890</p>
-                <p>Correo: <a href="mailto:contacto@iotek.com.ar" class="text-blue-400 hover:underline">contacto@iotek.com.ar</a></p>
+                <p>Correo: <a href="mailto:contacto@iotek.com.ar"
+                        class="text-blue-400 hover:underline">contacto@iotek.com.ar</a></p>
             </div>
         </div>
     </section>
@@ -216,29 +307,44 @@
             });
 
             // Initialize Particles.js
-            particlesJS.load('particles-js', 'particles.json', function() {
+            particlesJS.load('particles-js', 'particles.json', function () {
                 console.log('Particles.js config loaded');
             });
         });
 
         document.querySelectorAll('.ripple-effect').forEach(button => {
-    button.addEventListener('click', function (e) {
-        const ripple = document.createElement('span');
-        const rect = button.getBoundingClientRect();
-        const size = Math.max(rect.width, rect.height);
-        const x = e.clientX - rect.left - size / 2;
-        const y = e.clientY - rect.top - size / 2;
+            button.addEventListener('click', function (e) {
+                const ripple = document.createElement('span');
+                const rect = button.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
 
-        ripple.style.width = ripple.style.height = `${size}px`;
-        ripple.style.left = `${x}px`;
-        ripple.style.top = `${y}px`;
+                ripple.style.width = ripple.style.height = `${size}px`;
+                ripple.style.left = `${x}px`;
+                ripple.style.top = `${y}px`;
 
-        button.appendChild(ripple);
+                button.appendChild(ripple);
 
-        // Eliminar el span después de la animación
-        ripple.addEventListener('animationend', () => ripple.remove());
-    });
-});
+                // Eliminar el span después de la animación
+                ripple.addEventListener('animationend', () => ripple.remove());
+            });
+        });
+
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault(); // Evita el comportamiento por defecto del formulario
+
+            const serviceID = "service_hbypjuq"; // Reemplaza con tu Service ID de EmailJS
+            const templateID = "template_o6a7jxp"; // Reemplaza con tu Template ID de EmailJS
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    alert("Correo enviado con éxito");
+                    document.getElementById("contact-form").reset();
+                }, (err) => {
+                    alert("Error al enviar el correo: " + JSON.stringify(err));
+                });
+        });
 
     </script>
 </body>
