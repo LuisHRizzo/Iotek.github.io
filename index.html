@@ -116,8 +116,12 @@
                         <p class="text-lg text-white">Más de 20 años de experiencia.</p>
                     </div>
                     <div class="p-6 rounded-lg flex items-center space-x-4 w-full">
-                        <i class="fas fa-robot text-blue-400 text-3xl"></i>
-                        <p class="text-lg text-white">Expertos en ciberseguridad, IoT, IA y sistemas embebidos.</p>
+                        <i class="fas fa-robot text-orange-400 text-3xl"></i>
+                        <p class="text-lg text-white">Expertos en domótica, IoT, IA y sistemas embebidos.</p>
+                    </div>
+                    <div class="p-6 rounded-lg flex items-center space-x-4 w-full">
+                        <i class="fas fa-microchip text-blue-400 text-3xl"></i>
+                        <p class="text-lg text-white">Soporte a infraestructuras críticas de IT y Networking industrial.</p>
                     </div>
                     <div class="p-6 rounded-lg flex items-center space-x-4 w-full">
                         <i class="fas fa-mobile-alt text-green-400 text-3xl"></i>
@@ -127,7 +131,7 @@
                         <i class="fas fa-handshake text-yellow-400 text-3xl"></i>
                         <p class="text-lg text-white">Alianzas con marcas líderes.</p>
                     </div>
-                    <div class="p-6 rounded-lg flex items-center space-x-4 col-span-full text-center justify-center">
+                    <div class="p-6 rounded-lg flex items-center space-x-4 w-full">
                         <i class="fas fa-headset text-red-400 text-3xl"></i>
                         <p class="text-lg text-white">Soporte y acompañamiento continuo.</p>
                     </div>
@@ -137,59 +141,127 @@
     </section>
 
     <!-- Servicios -->
-    <section id="servicios" class="py-20 bg-black text-gray-900">
-        <div class="mx-auto px-4">
-            <h2 class="text-3xl md:text-5xl font-bold gradient-title text-center" data-aos="fade-up">Soluciones
-                Tecnológicas a Tu Medida</h2>
-            <div class="mt-10 grid grid-cols-1 md:grid-cols-2">
-                <div class="service-card" style="background-image: url('src/cameras.png');" data-aos="fade-right">
-                    Instalación de Cámaras de Seguridad
-                    <div class="service-card-content">
-                        <p class="text-lg">Provisión e instalación de cámaras IP, analógicas, domo, y PTZ.</p>
-                        <p class="text-lg">Configuración avanzada y puesta en marcha para monitoreo eficaz.</p>
+    <section id="servicios" class="py-20 bg-black text-gray-100">
+        <div class="container mx-auto max-w-[80%] px-4">
+            <h2 class="text-3xl md:text-5xl font-bold gradient-title text-center" data-aos="fade-up">
+                Soluciones Tecnológicas a la Medida
+            </h2>
+            <p class="text-lg text-center mt-4">
+                Brindamos soluciones tecnológicas personalizadas con un enfoque en seguridad, eficiencia y calidad.
+            </p>
+    
+            <!-- Tabs de Categorías -->
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <button class="tab-btn active" data-tab="consultoria">Consultoría y Diseño</button>
+                <button class="tab-btn" data-tab="iot">IoT y Desarrollo</button>
+                <button class="tab-btn" data-tab="infraestructura">Infraestructura y Redes</button>
+                <button class="tab-btn" data-tab="seguridad">Seguridad y Control</button>
+                <button class="tab-btn" data-tab="devops">DevOps y Automatización</button>
+                <button class="tab-btn" data-tab="especiales">Servicios Especiales</button>
+            </div>
+    
+            <!-- Contenido de las Pestañas con Imágenes de Fondo -->
+            <div class="tab-content mt-10">
+    
+                <!-- 1️⃣ Consultoría y Diseño -->
+                <div id="consultoria" class="tab-pane active bg-tab" style="background-image: url('src/consulting.png');">
+                    <div class="overlay"></div>
+                    <div class="tab-inner">
+                        <h3 class="text-3xl font-bold">Consultoría y Diseño de Soluciones</h3>
+                        <p>Brindamos asesoramiento estratégico para implementar tecnologías adaptadas a tus necesidades.</p>
+                        <ul class="list">
+                            <li>🔹 Consultoría Tecnológica: Análisis de necesidades, asesoramiento en selección de tecnologías y planificación estratégica.</li>
+                            <li>🔹 Consultoría en Innovación: Diseño y evaluación de soluciones tecnológicas, análisis de factibilidad y diseño de dispositivos IoT personalizados.</li>
+                            <li>🔹 Consultoría en Infraestructura Física: Evaluación y diseño de redes de telecomunicaciones, fibra óptica y radiofrecuencia.</li>
+                            <li>🔹 Integración de Sistemas de Control Industrial: Implementación y optimización de sistemas SCADA, PLC y automatización de procesos industriales.</li>
+                            <li>🔹 Identificación por Radiofrecuencia (RFID): Asesoramiento y despliegue de soluciones RFID para trazabilidad y control de activos.</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="service-card" style="background-image: url('src/servidores.png');" data-aos="fade-left">
-                    Configuración de Servidores
-                    <div class="service-card-content">
-                        <p class="text-lg">Implementación de servidores seguros y eficientes.</p>
-                        <p class="text-lg">Soporte completo desde la instalación hasta el mantenimiento.</p>
+    
+                <!-- 2️⃣ IoT y Desarrollo -->
+                <div id="iot" class="tab-pane bg-tab" style="background-image: url('src/equipment.png');">
+                    <div class="overlay"></div>
+                    <div class="tab-inner">
+                        <h3 class="text-3xl font-bold">Desarrollo y fabricacion de Soluciones Tecnológicas</h3>
+                        <p>Soluciones de software, hardware y visión artificial para automatizar procesos.</p>
+                        <ul class="list">
+                            <li>🔹 Desarrollo de Software a Medida: Creación de software, plataformas y aplicaciones adaptadas a necesidades específicas.</li>
+                            <li>🔹 Desarrollo de Hardware e IoT: Fabricación de dispositivos IoT optimizados para consumo de energía y versatilidad</li>
+                            <li>🔹 Implementación de Brokers de Datos: Plataforma de transporte de datos con comunicación segura y liviana.</li>
+                            <li>🔹 Sistemas de Visión Artificial: Desarrollo de modelos de IA para reconocimiento facial, conteo de personas y videoanalítica.</li>
+                            <li>🔹 Entrenamiento de Modelos de IA: Creación de datasets y entrenamiento de redes neuronales</li>
+                            <li>🔹 Domótica y Automatización de Edificios: Desarrollo de soluciones inteligentes para la gestión de iluminación, climatización y seguridad en edificios.</li>
+                            <li>🔹 Robótica Industrial: Diseño e integración de robots colaborativos y sistemas de automatización en líneas de producción.</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="service-card" style="background-image: url('src/support.png');" data-aos="fade-right">
-                    Mantenimiento y Soporte Técnico
-                    <div class="service-card-content">
-                        <p class="text-lg">Planes preventivos y correctivos para mantener tus sistemas al día.</p>
-                        <p class="text-lg">Asistencia técnica 24/7 con personal altamente capacitado.</p>
+    
+                <!-- 3️⃣ Infraestructura y Redes -->
+                <div id="infraestructura" class="tab-pane bg-tab" style="background-image: url('src/networks.png');">
+                    <div class="overlay"></div>
+                    <div class="tab-inner">
+                        <h3 class="text-3xl font-bold">Infraestructura y Redes</h3>
+                        <p>Optimización de redes, seguridad perimetral y monitoreo de infraestructura.</p>
+                        <ul class="list">
+                            <li>🔹 Diseño e Implementación de Redes: Análisis de infraestructura, optimización de redes y configuración de SD-WAN.</li>
+                            <li>🔹 Seguridad de Redes: Implementación de firewalls, IDS/IPS y auditorías de seguridad.</li>
+                            <li>🔹 Migración de Redes: Planificación y ejecución de migraciones con mínimo impacto.</li>
+                            <li>🔹 Monitorización y Gestión de Redes: Implementación de sistemas de monitoreo en tiempo real.</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="service-card" style="background-image: url('src/consulting.png');" data-aos="fade-left">
-                    Consultoría en Seguridad
-                    <div class="service-card-content">
-                        <p class="text-lg">Evaluación integral de riesgos.</p>
-                        <p class="text-lg">Diseño de sistemas de seguridad personalizados según tus necesidades.</p>
+    
+                <!-- 4️⃣ Seguridad y Control -->
+                <div id="seguridad" class="tab-pane bg-tab" style="background-image: url('src/cameras.png');">
+                    <div class="overlay"></div>
+                    <div class="tab-inner">
+                        <h3 class="text-3xl font-bold">Integraciones de Seguridad</h3>
+                        <p>Desde CCTV hasta biometría avanzada, aseguramos la protección de tu empresa.</p>
+                        <ul class="list">
+                            <li>🔹 CCTV y Videoanalítica: Instalación y configuración de sistemas de videovigilancia con análisis avanzado.</li>
+                            <li>🔹 Control de Acceso: Sistemas biométricos, lectores de iris y tarjetas de proximidad.</li>
+                            <li>🔹 Alarmas y Detección de Intrusos: Sistemas cableados e inalámbricos con integración a software de seguridad.</li>
+                            <li>🔹 Drones para Seguridad: Vigilancia perimetral con cámaras térmicas e infrarrojas.</li>
+                            <li>🔹 Integraciones de Seguridad: Desarrollo de plataformas de gestión unificada con interoperabilidad de CCTV, control de acceso y alarmas.</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="service-card justify-center" style="background-image: url('src/equipment.png');"
-                    data-aos="fade-right">
-                    Equipos a Comodato
-                    <div class="service-card-content">
-                        <p class="text-lg">Amplia gama de cámaras y grabadores disponibles.</p>
-                        <p class="text-lg">Flexibilidad en contratos y opciones adaptadas a tus requerimientos.</p>
+    
+                <!-- 5️⃣ DevOps y Automatización -->
+                <div id="devops" class="tab-pane bg-tab" style="background-image: url('src/servidores.png');">
+                    <div class="overlay"></div>
+                    <div class="tab-inner">
+                        <h3 class="text-3xl font-bold">DevOps y Automatización</h3>
+                        <p>Desde integración continua hasta monitorización en tiempo real.</p>
+                        <ul class="list">
+                            <li>🔹 Automatización de Procesos (CI/CD): Implementación de herramientas como Terraform, Ansible y Kubernetes</li>
+                            <li>🔹 Monitorización y Logging: Configuración de dashboards en tiempo real y análisis de logs.</li>
+                            <li>🔹 Seguridad en DevOps (DevSecOps): Automatización de escaneos de vulnerabilidades y pruebas de seguridad.</li>
+                            <li>🔹 Capacitación en DevOps: Talleres y formación en herramientas y metodologías de automatización.</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="service-card" style="background-image: url('src/networks.png');" data-aos="fade-left">
-                    Redes y Conectividad
-                    <div class="service-card-content">
-                        <p class="text-lg">Diseño e implementación de redes LAN y Wi-Fi seguras y de alto rendimiento.
-                        </p>
-                        <p class="text-lg">Optimización y monitoreo continuo para asegurar el máximo tiempo de
-                            actividad.</p>
+    
+                <!-- 6️⃣ Servicios Especiales -->
+                <div id="especiales" class="tab-pane bg-tab" style="background-image: url('src/capacitacion.png');">
+                    <div class="overlay"></div>
+                    <div class="tab-inner">
+                        <h3 class="text-3xl font-bold">Servicios Especiales</h3>
+                        <p>Capacitación tecnológica y opciones flexibles de adquisición.</p>
+                        <ul class="list">
+                            <li>🔹 Capacitación en IA y DevOps</li>
+                            <li>🔹 Equipos a comodato</li>
+                            <li>🔹 Talleres de innovación</li>
+                        </ul>
                     </div>
                 </div>
+    
             </div>
         </div>
     </section>
+    
+
 
     <!-- Casos de Éxito -->
     <section id="casos-exito" class="py-20 bg-gray-800 text-gray-300 rounded-tl-full">
@@ -358,6 +430,21 @@
                 ripple.addEventListener('animationend', () => ripple.remove());
             });
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".tab-btn");
+            const tabs = document.querySelectorAll(".tab-pane");
+
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    buttons.forEach(btn => btn.classList.remove("active"));
+                    this.classList.add("active");
+                    tabs.forEach(tab => tab.classList.remove("active"));
+                    document.getElementById(this.dataset.tab).classList.add("active");
+                });
+            });
+        });
+
 
         document.getElementById("contact-form").addEventListener("submit", function (e) {
             e.preventDefault(); // Evita el comportamiento por defecto del formulario

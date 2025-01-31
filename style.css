@@ -175,44 +175,71 @@ section {
 }
 /* Cards de servicios */
 .service-card {
-    position: relative;
-    overflow: hidden;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: x-large;
-    font-weight: bolder;
-    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-5px);
 }
 
-.service-card::before {
-    content: "";
+/* Fondo con imágenes */
+.bg-tab {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 80px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/* Oscurece el fondo para mayor legibilidad */
+.overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.3);
-    transition: background 0.5s ease;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
 }
 
-.service-card:hover::before {
-    background: rgba(0, 0, 0, 0);
-}
-
-.service-card-content {
+/* Contenido de cada tab */
+.tab-inner {
     position: relative;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
 }
 
-.service-card:hover .service-card-content {
-    opacity: 1;
+/* Botones de Tabs */
+.tab-btn {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
-/* Pyramid SVG */
-#sobre-nosotros svg {
-    width: 240px;
-    height: auto;
+.tab-btn.active {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    transform: scale(1.1);
+}
+
+/* Ocultar tab-pane por defecto */
+.tab-pane {
+    display: none;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Mostrar tab activo */
+.tab-pane.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Cards */
