@@ -208,7 +208,7 @@ section {
     position: relative;
     z-index: 2;
     color: white;
-    text-align: left;
+    text-align: justify;
     max-width: 600px;
     margin: auto;
 }
