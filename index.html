@@ -36,8 +36,9 @@
                 <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
                     <li><a href="#inicio" class="nav-link">Inicio</a></li>
                     <li><a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="#soluciones" class="nav-link">Soluciones</a></li>
                     <li><a href="#servicios" class="nav-link">Servicios</a></li>
-                    <li><a href="#casos-exito" class="nav-link">Casos de Éxito</a></li>
+                    <!-- <li><a href="#casos-exito" class="nav-link">Casos de Éxito</a></li> -->
                     <li><a href="#contacto" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
@@ -64,7 +65,7 @@
     </section>
 
     <!-- Sobre Nosotros -->
-    <section id="sobre-nosotros" class="py-20 bg-gray-800 text-gray-900 rounded-br-full">
+    <section id="sobre-nosotros" class="py-20 bg-gray-800 text-gray-900 rounded-bl-full">
         <div class="container mx-auto max-w-[70%] px-4">
             <h2 class="text-3xl md:text-5xl font-bold gradient-title text-center" data-aos="fade-right">Conoce a Iotek
                 Soluciones SA</h2>
@@ -132,13 +133,241 @@
         </div>
     </section>
 
+    <section id="soluciones" class="py-20 bg-gray-900 text-gray-100">
+        <div class="container mx-auto max-w-[80%] px-4">
+            <h2 class="text-3xl md:text-5xl font-bold gradient-title text-center" data-aos="fade-up">
+                Portafolio de Soluciones por Verticales
+            </h2>
+            <p class="text-lg text-center mt-4">
+                Optimizamos procesos, garantizamos seguridad y potenciamos la eficiencia con nuestras soluciones
+                tecnológicas adaptadas a diversas industrias.
+            </p>
+
+            <!-- Tabs de Verticales -->
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <button class="tab-btn active" data-tab="edificios">Edificios Inteligentes</button>
+                <button class="tab-btn" data-tab="barrios">Barrios Cerrados</button>
+                <button class="tab-btn" data-tab="industria">Industria y Manufactura</button>
+                <button class="tab-btn" data-tab="salud">Hospitales y Salud</button>
+                <button class="tab-btn" data-tab="ciudades-inteligentes">Ciudades Inteligentes</button>
+                <button class="tab-btn" data-tab="seguridad">Seguridad Pública</button>
+                <button class="tab-btn" data-tab="bancos">Bancos y Finanzas</button>
+                <button class="tab-btn" data-tab="logistica">Logística y Distribución</button>
+            </div>
+
+            <!-- Contenido de las Pestañas con Imágenes de Fondo -->
+            <div class="tab-content mt-10">
+
+                <!-- 1️⃣ Edificios Inteligentes -->
+                <div id="edificios" class="tab-pane active bg-tab" style="background-image: url('src/edificios.png');">
+                    <div class="overlay"></div>
+                    <div class="tab-inner">
+                        <h3 class="text-3xl font-bold">Edificios Inteligentes</h3>
+                        <p class="text-lg">Automatización y gestión eficiente para edificios corporativos y
+                            residenciales.</p>
+                        <br>
+                        <h4 class="text-xl font-semibold">Problemáticas</h4>
+                        <ul>
+                            <li>❌ Falta de control eficiente de accesos y consumos energéticos.</li>
+                            <li>❌ Seguridad fragmentada y sistemas no integrados.</li>
+                            <li>❌ Altos costos de mantenimiento por falta de monitoreo predictivo.</li>
+                        </ul>
+                        <br>
+                        <h4 class="text-xl font-semibold">Solución</h4>
+                        <ul>
+                            <li>✅ Control de acceso con reconocimiento facial y biometría.</li>
+                            <li>✅ Integración de CCTV con IA para monitoreo en tiempo real.</li>
+                            <li>✅ Sensores IoT para iluminación, climatización y consumo eléctrico.</li>
+                            <li>✅ Plataforma de monitoreo centralizado con alertas automatizadas.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 2️⃣ Barrios Cerrados -->
+                <div id="barrios" class="tab-pane bg-tab" style="background-image: url('src/barrios.png');">
+                    <div class="overlay"></div>
+                    <div class="tab-inner">
+                        <h3 class="text-3xl font-bold">Barrios Cerrados y Urbanizaciones</h3>
+                        <p class="text-lg">Soluciones de seguridad y control de accesos en comunidades privadas.</p>
+                        <br>
+                        <h4 class="text-xl font-semibold">Problemáticas</h4>
+                        <ul>
+                            <li>❌ Ingreso no autorizado de personas o vehículos.</li>
+                            <li>❌ Falta de integración entre seguridad perimetral y control de accesos.</li>
+                            <li>❌ Dificultad en la gestión de visitantes y residentes.</li>
+                        </ul>
+                        <br>
+                        <h4 class="text-xl font-semibold">Solución</h4>
+                        <ul>
+                            <li>✅ Sistemas de acceso vehicular con lectura de patentes.</li>
+                            <li>✅ Videovigilancia con videoanalítica para detección de actividades sospechosas.</li>
+                            <li>✅ Sensores perimetrales con detección de intrusos y alarmas.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 3️⃣ Industria y Manufactura -->
+                <div id="industria" class="tab-pane bg-tab" style="background-image: url('src/industria.png');">
+                    <div class="overlay"></div>
+                    <div class="tab-inner">
+                        <h3 class="text-3xl font-bold">Industria y Manufactura</h3>
+                        <p class="text-lg">Automatización y seguridad para entornos industriales.</p>
+                        <br>
+                        <h4 class="text-xl font-semibold">Problemáticas</h4>
+                        <ul>
+                            <li>❌ Accidentes laborales por falta de monitoreo en zonas de riesgo.</li>
+                            <li>❌ Robo de materiales y accesos no controlados a áreas restringidas.</li>
+                            <li>❌ Falta de control sobre los procesos de producción.</li>
+                        </ul>
+                        <br>
+                        <h4 class="text-xl font-semibold">Solución</h4>
+                        <ul>
+                            <li>✅ CCTV con IA para detección de incidentes en zonas críticas.</li>
+                            <li>✅ Control de acceso biométrico en áreas restringidas.</li>
+                            <li>✅ Sensores de gas, temperatura y humedad para monitoreo ambiental.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 4️⃣ Hospitales y Salud -->
+                <div id="salud" class="tab-pane bg-tab" style="background-image: url('src/salud.png');">
+                    <div class="overlay"></div>
+                    <div class="tab-inner">
+                        <h3 class="text-3xl font-bold">Hospitales y Centros de Salud</h3>
+                        <p class="text-lg">Seguridad y monitoreo en entornos médicos.</p>
+                        <br>
+                        <h4 class="text-xl font-semibold">Problemáticas</h4>
+                        <ul>
+                            <li>❌ Acceso no autorizado a áreas críticas como quirófanos y farmacias.</li>
+                            <li>❌ Falta de monitoreo de equipos médicos y suministros.</li>
+                        </ul>
+                        <br>
+                        <h4 class="text-xl font-semibold">Solución</h4>
+                        <ul>
+                            <li>✅ Control de acceso biométrico en áreas restringidas.</li>
+                            <li>✅ CCTV con reconocimiento facial para identificación de personal y visitantes.</li>
+                            <li>✅ Sensores IoT para monitoreo de temperatura en medicamentos.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 5️⃣ Ciudades Inteligentes -->
+                <div id="ciudades-inteligentes" class="tab-pane bg-tab"
+                    style="background-image: url('src/ciudades.png');">
+                    <div class="overlay"></div>
+                    <div class="tab-inner">
+                        <h3 class="text-3xl font-bold">Ciudades Inteligentes</h3>
+                        <p class="text-lg">Gestión eficiente del tráfico y seguridad en espacios urbanos.</p>
+                        <br>
+
+                        <h4 class="text-xl font-semibold">Problemáticas</h4>
+                        <ul>
+                            <li>❌ Falta de monitoreo del tráfico y congestión en zonas críticas.</li>
+                            <li>❌ Seguridad deficiente en espacios públicos y eventos masivos.</li>
+                            <li>❌ Consumo ineficiente de recursos energéticos.</li>
+                        </ul>
+                        <br>
+
+                        <h4 class="text-xl font-semibold">Solución</h4>
+                        <ul>
+                            <li>✅ Cámaras con reconocimiento de matrículas y control de tráfico.</li>
+                            <li>✅ Iluminación inteligente con sensores de presencia.</li>
+                            <li>✅ Videovigilancia urbana con análisis de comportamiento.</li>
+                            <li>✅ Sensores de calidad del aire y temperatura para control ambiental.</li>
+                        </ul>
+                        <br>
+
+                        <h4 class="text-xl font-semibold">Beneficios</h4>
+                        <ul>
+                            <li>✅ Movilidad más eficiente con gestión inteligente del tráfico.</li>
+                            <li>✅ Mayor seguridad en espacios públicos con monitoreo constante.</li>
+                            <li>✅ Reducción del consumo energético con sistemas inteligentes.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 6️⃣ Seguridad Pública y Centros de Detención -->
+                <div id="seguridad" class="tab-pane bg-tab" style="background-image: url('src/seguridad.png');">
+                    <div class="overlay"></div>
+                    <div class="tab-inner">
+                        <h3 class="text-3xl font-bold">Seguridad Pública y Centros de Detención</h3>
+                        <p class="text-lg">Monitoreo y control avanzado en centros penitenciarios y edificios
+                            gubernamentales.</p>
+                        <br>
+                        <h4 class="text-xl font-semibold">Problemáticas</h4>
+                        <ul>
+                            <li>❌ Riesgo de fugas y acceso no autorizado a áreas críticas.</li>
+                            <li>❌ Dificultad en la supervisión de internos y personal.</li>
+                            <li>❌ Falta de integración entre videovigilancia y control de accesos.</li>
+                        </ul>
+                        <br>
+                        <h4 class="text-xl font-semibold">Solución</h4>
+                        <ul>
+                            <li>✅ Cámaras de videovigilancia con detección de movimiento y reconocimiento facial.</li>
+                            <li>✅ Control de acceso con credenciales biométricas y monitoreo centralizado.</li>
+                            <li>✅ Sensores de movimiento y alarmas conectadas a centros de comando.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 7️⃣ Bancos y Entidades Financieras -->
+                <div id="bancos" class="tab-pane bg-tab" style="background-image: url('src/bancos.png');">
+                    <div class="overlay"></div>
+                    <div class="tab-inner">
+                        <h3 class="text-3xl font-bold">Bancos y Entidades Financieras</h3>
+                        <p class="text-lg">Seguridad avanzada en sucursales bancarias y cajeros automáticos.</p>
+                        <br>
+                        <h4 class="text-xl font-semibold">Problemáticas</h4>
+                        <ul>
+                            <li>❌ Riesgo de robos en sucursales y cajeros automáticos.</li>
+                            <li>❌ Acceso no autorizado a bóvedas y áreas restringidas.</li>
+                            <li>❌ Falta de monitoreo en tiempo real en múltiples sucursales.</li>
+                        </ul>
+                        <br>
+                        <h4 class="text-xl font-semibold">Solución</h4>
+                        <ul>
+                            <li>✅ Cámaras de alta definición en áreas críticas con análisis de comportamiento.</li>
+                            <li>✅ Control de acceso con reconocimiento facial en bóvedas.</li>
+                            <li>✅ Sensores de intrusión en cajeros automáticos y sucursales.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 8️⃣ Logística y Centros de Distribución -->
+                <div id="logistica" class="tab-pane bg-tab" style="background-image: url('src/logistica.png');">
+                    <div class="overlay"></div>
+                    <div class="tab-inner">
+                        <h3 class="text-3xl font-bold">Logística y Centros de Distribución</h3>
+                        <p class="text-lg">Seguridad y control en la distribución de mercancías.</p>
+                        <br>
+                        <h4 class="text-xl font-semibold">Problemáticas</h4>
+                        <ul>
+                            <li>❌ Robos y pérdidas de mercadería en tránsito y almacenamiento.</li>
+                            <li>❌ Falta de visibilidad en las operaciones logísticas.</li>
+                            <li>❌ Acceso no autorizado a zonas restringidas.</li>
+                        </ul>
+                        <br>
+                        <h4 class="text-xl font-semibold">Solución</h4>
+                        <ul>
+                            <li>✅ Cámaras de monitoreo con seguimiento de carga y descarga.</li>
+                            <li>✅ Control de acceso biométrico para personal autorizado.</li>
+                            <li>✅ Sensores de impacto y temperatura en mercadería.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
     <!-- Servicios -->
-    <section id="servicios" class="py-20 bg-black text-gray-100">
+    <section id="servicios" class="py-20 bg-gray-800 text-gray-900 rounded-tr-full">
         <div class="container mx-auto max-w-[80%] px-4">
             <h2 class="text-3xl md:text-5xl font-bold gradient-title text-center" data-aos="fade-up">
                 Soluciones Tecnológicas a la Medida
             </h2>
-            <p class="text-lg text-center mt-4">
+            <p class="text-xl text-center mt-4 text-white">
                 Brindamos soluciones tecnológicas personalizadas con un enfoque en seguridad, eficiencia y calidad.
             </p>
 
@@ -155,7 +384,7 @@
             <!-- Contenido de las Pestañas con Imágenes de Fondo -->
             <div class="tab-content mt-10">
 
-                <!-- 1️⃣ Consultoría y Diseño -->
+                <!-- 1️ Consultoría y Diseño -->
                 <div id="consultoria" class="tab-pane active bg-tab"
                     style="background-image: url('src/consulting.png');">
                     <div class="overlay"></div>
@@ -166,25 +395,34 @@
                         </p>
                         <br>
                         <ul class="list">
-                            <li>🔹<strong><u>Consultoría Tecnológica:</u></strong> Análisis de necesidades,
-                                asesoramiento en selección de tecnologías y planificación estratégica.</li>
-                            <li>🔹 <strong><u>Consultoría en Innovación:</u></strong> Diseño y evaluación de soluciones
-                                tecnológicas, análisis
-                                de factibilidad y diseño de dispositivos IoT personalizados.</li>
-                            <li>🔹 <strong><u>Consultoría en Infraestructura Física:</u></strong> Evaluación y diseño de
-                                redes de
-                                telecomunicaciones, fibra óptica y radiofrecuencia.</li>
-                            <li>🔹 <strong><u>Integración de Sistemas de Control Industrial:</u></strong> Implementación
-                                y optimización de
-                                sistemas SCADA, PLC y automatización de procesos industriales.</li>
-                            <li>🔹 <strong><u>Identificación por Radiofrecuencia (RFID):</u></strong> Asesoramiento y
-                                despliegue de soluciones
-                                RFID para trazabilidad y control de activos.</li>
+                            <li>🔹<strong><u>Consultoría Tecnológica:</u></strong>
+                                <p>Análisis de necesidades,
+                                    asesoramiento en selección de tecnologías y planificación estratégica.</p>
+                            </li>
+                            <li>🔹 <strong><u>Consultoría en Innovación:</u></strong>
+                                <p>Diseño y evaluación de soluciones
+                                    tecnológicas, análisis
+                                    de factibilidad y diseño de dispositivos IoT personalizados.</p>
+                            </li>
+                            <li>🔹 <strong><u>Consultoría en Infraestructura Física:</u></strong>
+                                <p>Evaluación y diseño de
+                                    redes de telecomunicaciones, fibra óptica y radiofrecuencia.</p>
+                            </li>
+                            <li>🔹 <strong><u>Integración de Sistemas de Control Industrial:</u></strong>
+                                <p>Implementación
+                                    y optimización de
+                                    sistemas SCADA, PLC y automatización de procesos industriales.</p>
+                            </li>
+                            <li>🔹 <strong><u>Identificación por Radiofrecuencia (RFID):</u></strong>
+                                <p>Asesoramiento y
+                                    despliegue de soluciones
+                                    RFID para trazabilidad y control de activos.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- 2️⃣ IoT y Desarrollo -->
+                <!-- 2️ IoT y Desarrollo -->
                 <div id="iot" class="tab-pane bg-tab" style="background-image: url('src/equipment.png');">
                     <div class="overlay"></div>
                     <div class="tab-inner">
@@ -193,32 +431,46 @@
                             procesos.</p>
                         <br>
                         <ul class="list">
-                            <li>🔹 <strong><u>Desarrollo de Software a Medida:</u></strong> Creación de software,
-                                plataformas y aplicaciones
-                                adaptadas a necesidades específicas.</li>
-                            <li>🔹 <strong><u>Desarrollo de Hardware e IoT:</u></strong> Fabricación de dispositivos IoT
-                                optimizados para
-                                consumo de energía y versatilidad</li>
-                            <li>🔹 <strong><u>Implementación de Brokers de Datos:</u></strong> Plataforma de transporte
-                                de datos con
-                                comunicación segura y liviana.</li>
-                            <li>🔹 <strong><u>Sistemas de Visión Artificial:</u></strong> Desarrollo de modelos de IA
-                                para reconocimiento
-                                facial, conteo de personas y videoanalítica.</li>
-                            <li>🔹 <strong><u>Entrenamiento de Modelos de IA:</u></strong> Creación de datasets y
-                                entrenamiento de redes
-                                neuronales</li>
-                            <li>🔹 <strong><u>Domótica y Automatización de Edificios:</u></strong> Desarrollo de
-                                soluciones inteligentes para la
-                                gestión de iluminación, climatización y seguridad en edificios.</li>
-                            <li>🔹 <strong><u>Robótica Industrial:</u></strong> Diseño e integración de robots
-                                colaborativos y sistemas de
-                                automatización en líneas de producción.</li>
+                            <li>🔹 <strong><u>Desarrollo de Software a Medida:</u></strong>
+                                <p>Creación de software,
+                                    plataformas y aplicaciones
+                                    adaptadas a necesidades específicas.</p>
+                            </li>
+                            <li>🔹 <strong><u>Desarrollo de Hardware e IoT:</u></strong>
+                                <p>Fabricación de dispositivos IoT
+                                    optimizados para
+                                    consumo de energía y versatilidad</p>
+                            </li>
+                            <li>🔹 <strong><u>Implementación de Brokers de Datos:</u></strong>
+                                <p>Plataforma de transporte
+                                    de datos con
+                                    comunicación segura y liviana.</p>
+                            </li>
+                            <li>🔹 <strong><u>Sistemas de Visión Artificial:</u></strong>
+                                <p>Desarrollo de modelos de IA
+                                    para reconocimiento
+                                    facial, conteo de personas y videoanalítica.</p>
+                            </li>
+                            <li>🔹 <strong><u>Entrenamiento de Modelos de IA:</u></strong>
+                                <p>Creación de datasets y
+                                    entrenamiento de redes
+                                    neuronales</p>
+                            </li>
+                            <li>🔹 <strong><u>Domótica y Automatización de Edificios:</u></strong>
+                                <p>Desarrollo de
+                                    soluciones inteligentes para la
+                                    gestión de iluminación, climatización y seguridad en edificios.</p>
+                            </li>
+                            <li>🔹 <strong><u>Robótica Industrial:</u></strong>
+                                <p>Diseño e integración de robots
+                                    colaborativos y sistemas de
+                                    automatización en líneas de producción.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- 3️⃣ Infraestructura y Redes -->
+                <!-- 3️ Infraestructura y Redes -->
                 <div id="infraestructura" class="tab-pane bg-tab" style="background-image: url('src/networks.png');">
                     <div class="overlay"></div>
                     <div class="tab-inner">
@@ -227,22 +479,26 @@
                         </p>
                         <br>
                         <ul class="list">
-                            <li>🔹 <strong><u>Diseño e Implementación de Redes:</u></strong> Análisis de
-                                infraestructura, optimización de redes
-                                y configuración de SD-WAN.</li>
-                            <li>🔹 <strong><u>Seguridad de Redes:</u></strong> Implementación de firewalls, IDS/IPS y
-                                auditorías de seguridad.
+                            <li>🔹 <strong><u>Diseño e Implementación de Redes:</u></strong>
+                                <p>Análisis de infraestructura, optimización de redes y configuración de SD-WAN.</p>
                             </li>
-                            <li>🔹 <strong><u>Migración de Redes:</u></strong> Planificación y ejecución de migraciones
-                                con mínimo impacto.</li>
-                            <li>🔹 <strong><u>Monitorización y Gestión de Redes:</u></strong> Implementación de sistemas
-                                de monitoreo en tiempo
-                                real.</li>
+                            <li>🔹 <strong><u>Seguridad de Redes:</u></strong>
+                                <p>Implementación de firewalls, IDS/IPS y
+                                    auditorías de seguridad.</p>
+                            </li>
+                            <li>🔹 <strong><u>Migración de Redes:</u></strong>
+                                <p>Planificación y ejecución de migraciones
+                                    con mínimo impacto.</p>
+                            </li>
+                            <li>🔹 <strong><u>Monitorización y Gestión de Redes:</u></strong>
+                                <p>Implementación de sistemas
+                                    de monitoreo en tiempo real.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- 4️⃣ Seguridad y Control -->
+                <!-- 4️ Seguridad y Control -->
                 <div id="seguridad" class="tab-pane bg-tab" style="background-image: url('src/cameras.png');">
                     <div class="overlay"></div>
                     <div class="tab-inner">
@@ -251,25 +507,34 @@
                         </p>
                         <br>
                         <ul class="list">
-                            <li>🔹 <strong><u>CCTV y Videoanalítica:</u></strong> Instalación y configuración de
-                                sistemas de videovigilancia con
-                                análisis avanzado.</li>
-                            <li>🔹 <strong><u>Control de Acceso:</u></strong> Sistemas biométricos, lectores de iris y
-                                tarjetas de proximidad.
+                            <li>🔹 <strong><u>CCTV y Videoanalítica:</u></strong>
+                                <p>Instalación y configuración de
+                                    sistemas de videovigilancia con
+                                    análisis avanzado.</p>
                             </li>
-                            <li>🔹 <strong><u>Alarmas y Detección de Intrusos:</u></strong> Sistemas cableados e
-                                inalámbricos con integración a
-                                software de seguridad.</li>
-                            <li>🔹 <strong><u>Drones para Seguridad:</u></strong> Vigilancia perimetral con cámaras
-                                térmicas e infrarrojas.</li>
-                            <li>🔹 <strong><u>Integraciones de Seguridad:</u></strong> Desarrollo de plataformas de
-                                gestión unificada con
-                                interoperabilidad de CCTV, control de acceso y alarmas.</li>
+                            <li>🔹 <strong><u>Control de Acceso:</u></strong>
+                                <p>Sistemas biométricos, lectores de iris y
+                                    tarjetas de proximidad.</p>
+                            </li>
+                            <li>🔹 <strong><u>Alarmas y Detección de Intrusos:</u></strong>
+                                <p>Sistemas cableados e
+                                    inalámbricos con integración a
+                                    software de seguridad.</p>
+                            </li>
+                            <li>🔹 <strong><u>Drones para Seguridad:</u></strong>
+                                <p>Vigilancia perimetral con cámaras
+                                    térmicas e infrarrojas.</p>
+                            </li>
+                            <li>🔹 <strong><u>Integraciones de Seguridad:</u></strong>
+                                <p>Desarrollo de plataformas de
+                                    gestión unificada con
+                                    interoperabilidad de CCTV, control de acceso y alarmas.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- 5️⃣ DevOps y Automatización -->
+                <!-- 5️ DevOps y Automatización -->
                 <div id="devops" class="tab-pane bg-tab" style="background-image: url('src/servidores.png');">
                     <div class="overlay"></div>
                     <div class="tab-inner">
@@ -277,23 +542,31 @@
                         <p class="text-lg">Desde integración continua hasta monitorización en tiempo real.</p>
                         <br>
                         <ul class="list">
-                            <li>🔹 <strong><u>Automatización de Procesos (CI/CD):</u></strong> Implementación de
-                                herramientas como Terraform,
-                                Ansible y Kubernetes</li>
-                            <li>🔹 <strong><u>Monitorización y Logging:</u></strong> Configuración de dashboards en
-                                tiempo real y análisis de
-                                logs.</li>
-                            <li>🔹 <strong><u>Seguridad en DevOps (DevSecOps):</u></strong> Automatización de escaneos
-                                de vulnerabilidades y
-                                pruebas de seguridad.</li>
-                            <li>🔹 <strong><u>Capacitación en DevOps:</u></strong> Talleres y formación en herramientas
-                                y metodologías de
-                                automatización.</li>
+                            <li>🔹 <strong><u>Automatización de Procesos (CI/CD):</u></strong>
+                                <p>Implementación de
+                                    herramientas como Terraform,
+                                    Ansible y Kubernetes</p>
+                            </li>
+                            <li>🔹 <strong><u>Monitorización y Logging:</u></strong>
+                                <p>Configuración de dashboards en
+                                    tiempo real y análisis de
+                                    logs.</p>
+                            </li>
+                            <li>🔹 <strong><u>Seguridad en DevOps (DevSecOps):</u></strong>
+                                <p>Automatización de escaneos
+                                    de vulnerabilidades y
+                                    pruebas de seguridad.</p>
+                            </li>
+                            <li>🔹 <strong><u>Capacitación en DevOps:</u></strong>
+                                <p>Talleres y formación en herramientas
+                                    y metodologías de
+                                    automatización.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- 6️⃣ Servicios Especiales -->
+                <!-- 6️ Servicios Especiales -->
                 <div id="especiales" class="tab-pane bg-tab" style="background-image: url('src/capacitacion.png');">
                     <div class="overlay"></div>
                     <div class="tab-inner">
@@ -301,16 +574,19 @@
                         <p class="text-lg">Capacitación tecnológica y opciones flexibles de adquisición.</p>
                         <br>
                         <ul class="list">
-                            <li>🔹 <strong><u>Capacitación y Formación:</u></strong> Webinars, cursos y entrenamientos
-                                para mejorar la adopción
-                                de tecnologías.</li>
-                            <li>🔹 <strong><u>Equipos a Comodato:</u></strong> Flexibilidad en contratos para
-                                adquisición de tecnología sin
-                                inversión inicial.</li>
+                            <li>🔹 <strong><u>Capacitación y Formación:</u></strong>
+                                <p>Webinars, cursos y entrenamientos
+                                    para mejorar la adopción
+                                    de tecnologías.</p>
+                            </li>
+                            <li>🔹 <strong><u>Equipos a Comodato:</u></strong>
+                                <p>Flexibilidad en contratos para
+                                    adquisición de tecnología sin
+                                    inversión inicial.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -318,7 +594,7 @@
 
 
     <!-- Casos de Éxito -->
-    <section id="casos-exito" class="py-20 bg-gray-800 text-gray-300 rounded-tl-full">
+    <!-- <section id="casos-exito" class="py-20 bg-gray-800 text-gray-300 rounded-tl-full">
         <div class="container mx-auto max-w-[70%] px-4 text-center">
             <h2 class="text-3xl md:text-5xl font-bold gradient-title text-center" data-aos="fade-up">Soluciones reales
                 para desafíos tecnológicos.</h2>
@@ -328,7 +604,6 @@
                 un impacto tangible en la operación de nuestros clientes.
             </p>
             <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Logística -->
                 <div
                     class="p-6 bg-gray-700 rounded-lg shadow-lg transition-all transform hover:-translate-y-2 hover:shadow-2xl">
                     <div class="text-blue-400 text-4xl mb-4">
@@ -338,7 +613,6 @@
                     <p class="mt-2">Control de accesos y trazabilidad con monitoreo en tiempo real.</p>
                 </div>
 
-                <!-- Banca y Finanzas -->
                 <div
                     class="p-6 bg-gray-700 rounded-lg shadow-lg transition-all transform hover:-translate-y-2 hover:shadow-2xl">
                     <div class="text-blue-400 text-4xl mb-4">
@@ -348,7 +622,6 @@
                     <p class="mt-2">Seguridad integral con videovigilancia e IA.</p>
                 </div>
 
-                <!-- Retail -->
                 <div
                     class="p-6 bg-gray-700 rounded-lg shadow-lg transition-all transform hover:-translate-y-2 hover:shadow-2xl">
                     <div class="text-blue-400 text-4xl mb-4">
@@ -358,7 +631,6 @@
                     <p class="mt-2">Análisis de flujo de clientes con videoanalítica.</p>
                 </div>
 
-                <!-- Gobierno -->
                 <div
                     class="p-6 bg-gray-700 rounded-lg shadow-lg transition-all transform hover:-translate-y-2 hover:shadow-2xl">
                     <div class="text-blue-400 text-4xl mb-4">
@@ -368,7 +640,6 @@
                     <p class="mt-2">Monitoreo urbano con cámaras y detección de incidentes.</p>
                 </div>
 
-                <!-- Manufactura -->
                 <div
                     class="p-6 bg-gray-700 rounded-lg shadow-lg transition-all transform hover:-translate-y-2 hover:shadow-2xl">
                     <div class="text-blue-400 text-4xl mb-4">
@@ -378,7 +649,6 @@
                     <p class="mt-2">IoT para control de procesos industriales.</p>
                 </div>
 
-                <!-- Salud -->
                 <div
                     class="p-6 bg-gray-700 rounded-lg shadow-lg transition-all transform hover:-translate-y-2 hover:shadow-2xl">
                     <div class="text-blue-400 text-4xl mb-4">
@@ -390,7 +660,7 @@
             </div>
         </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Partners -->
     <section id="partners" class="py-20 bg-gray-800 text-gray-300 rounded-bl-full">
