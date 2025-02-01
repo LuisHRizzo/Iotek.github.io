@@ -133,64 +133,55 @@
         </div>
     </section>
 
+    <!-- Soluciones -->
     <section id="soluciones" class="py-20 bg-black text-gray-100">
         <div class="container mx-auto max-w-[80%] px-4">
-            <h2 class="text-3xl md:text-5xl font-bold gradient-title text-center" data-aos="fade-up">
-                Portafolio de Soluciones por Verticales
-            </h2>
-            <p class="text-lg text-center mt-4">
-                Optimizamos procesos, garantizamos seguridad y potenciamos la eficiencia con nuestras soluciones
-                tecnológicas adaptadas a diversas industrias.
-            </p>
 
-            <!-- Tabs de Verticales -->
-            <div class="mt-10 flex flex-wrap justify-center gap-4">
-                <button class="tab-btn active" data-tab="edificios">Edificios Inteligentes</button>
-                <button class="tab-btn" data-tab="barrios">Barrios Cerrados</button>
-                <button class="tab-btn" data-tab="industria">Industria y Manufactura</button>
-                <button class="tab-btn" data-tab="salud">Hospitales y Salud</button>
-                <button class="tab-btn" data-tab="ciudades-inteligentes">Ciudades Inteligentes</button>
-                <button class="tab-btn" data-tab="seguridad">Seguridad Pública</button>
-                <button class="tab-btn" data-tab="bancos">Bancos y Finanzas</button>
-                <button class="tab-btn" data-tab="logistica">Logística y Distribución</button>
+            <div class="mx-auto px-4">
+                <h2 class="text-3xl md:text-5xl font-bold gradient-title text-center" data-aos="fade-up">Portafolio de
+                    Soluciones por Verticales</h2>
+                <p class="text-xl text-center mt-4 text-white">
+                    En Iotek, ofrecemos soluciones de domótica e integración tecnológica diseñadas para optimizar
+                    procesos, mejorar la seguridad y potenciar la eficiencia en diversas industrias. La automatización y
+                    el monitoreo en tiempo real permiten reducir costos operativos, mejorar la experiencia de los
+                    usuarios y garantizar la seguridad en entornos críticos.
+                </p>
+                <p class="text-xl text-center mt-4 text-white">
+                    A continuación, presentamos nuestras soluciones adaptadas a diferentes sectores y sus aplicaciones
+                    específicas.
+                </p>
             </div>
-
-            <!-- Contenido de las Pestañas con Imágenes de Fondo -->
-            <div class="tab-content mt-10">
-
-                <!-- 1️⃣ Edificios Inteligentes -->
-                <div id="edificios" class="tab-pane active bg-tab" style="background-image: url('src/edificios.png');">
-                    <div class="overlay"></div>
-                    <div class="tab-inner">
-                        <h3 class="text-3xl font-bold">Edificios Inteligentes</h3>
-                        <p class="text-lg">Automatización y gestión eficiente para edificios corporativos y
-                            residenciales.</p>
-                        <br>
-                        <h4 class="text-xl font-semibold">Problemáticas</h4>
-                        <ul>
-                            <li>❌ Falta de control eficiente de accesos y consumos energéticos.</li>
-                            <li>❌ Seguridad fragmentada y sistemas no integrados.</li>
-                            <li>❌ Altos costos de mantenimiento por falta de monitoreo predictivo.</li>
-                        </ul>
-                        <br>
-                        <h4 class="text-xl font-semibold">Solución</h4>
-                        <ul>
-                            <li>✅ Control de acceso con reconocimiento facial y biometría.</li>
-                            <li>✅ Integración de CCTV con IA para monitoreo en tiempo real.</li>
-                            <li>✅ Sensores IoT para iluminación, climatización y consumo eléctrico.</li>
-                            <li>✅ Plataforma de monitoreo centralizado con alertas automatizadas.</li>
-                        </ul>
+        </div>
+        <div class="container mx-auto max-w-[90%] px-4">
+            <div class="mx-auto px-4">
+                <div class="mt-10 grid grid-cols-1 md:grid-cols-2">
+                    <div class="service-card bg-black/50 bg-blend-overlay" style="background-image: url('src/edificios.png');" onclick="toggleContent(this)">
+                        <!-- Título visible por defecto -->
+                        <h3 class="text-3xl font-bold text-white mt-10 ml-10">Edificios Inteligentes</h3>
+                    
+                        <!-- Contenido oculto por defecto -->
+                        <div class="service-card-content hidden m-5">
+                            <h4 class="text-lg font-semibold">Problemáticas</h4>
+                            <ul>
+                                <li>❌ Falta de control eficiente de accesos y consumos energéticos.</li>
+                                <li>❌ Seguridad fragmentada y sistemas no integrados.</li>
+                                <li>❌ Altos costos de mantenimiento por falta de monitoreo predictivo.</li>
+                            </ul>
+                            <br>
+                            <h4 class="text-lg font-semibold">Solución</h4>
+                            <ul>
+                                <li>✅ Control de acceso con reconocimiento facial y biometría.</li>
+                                <li>✅ Integración de CCTV con IA para monitoreo en tiempo real.</li>
+                                <li>✅ Sensores IoT para iluminación, climatización y consumo eléctrico.</li>
+                                <li>✅ Plataforma de monitoreo centralizado con alertas automatizadas.</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
 
-                <!-- 2️⃣ Barrios Cerrados -->
-                <div id="barrios" class="tab-pane bg-tab" style="background-image: url('src/barrios.png');">
-                    <div class="overlay"></div>
-                    <div class="tab-inner">
-                        <h3 class="text-3xl font-bold">Barrios Cerrados y Urbanizaciones</h3>
-                        <p class="text-lg">Soluciones de seguridad y control de accesos en comunidades privadas.</p>
-                        <br>
-                        <h4 class="text-xl font-semibold">Problemáticas</h4>
+                    <div class="service-card bg-black/50 bg-blend-overlay" style="background-image: url('src/barrios.png');" onclick="toggleContent(this)">
+                        <h3 class="text-3xl font-bold mt-10 ml-10"> Barrios Cerrados y Urbanizaciones</h3>
+                        <div class="service-card-content hidden m-5">
+                            <h4 class="text-xl font-semibold">Problemáticas</h4>
                         <ul>
                             <li>❌ Ingreso no autorizado de personas o vehículos.</li>
                             <li>❌ Falta de integración entre seguridad perimetral y control de accesos.</li>
@@ -203,17 +194,12 @@
                             <li>✅ Videovigilancia con videoanalítica para detección de actividades sospechosas.</li>
                             <li>✅ Sensores perimetrales con detección de intrusos y alarmas.</li>
                         </ul>
+                        </div>
                     </div>
-                </div>
-
-                <!-- 3️⃣ Industria y Manufactura -->
-                <div id="industria" class="tab-pane bg-tab" style="background-image: url('src/industria.png');">
-                    <div class="overlay"></div>
-                    <div class="tab-inner">
-                        <h3 class="text-3xl font-bold">Industria y Manufactura</h3>
-                        <p class="text-lg">Automatización y seguridad para entornos industriales.</p>
-                        <br>
-                        <h4 class="text-xl font-semibold">Problemáticas</h4>
+                    <div class="service-card bg-black/50 bg-blend-overlay" style="background-image: url('src/industria.png');" onclick="toggleContent(this)">
+                        <h3 class="text-3xl font-bold mt-10 ml-10">Industria y manufactura</h3>
+                        <div class="service-card-content hidden m-5">
+                            <h4 class="text-xl font-semibold">Problemáticas</h4>
                         <ul>
                             <li>❌ Accidentes laborales por falta de monitoreo en zonas de riesgo.</li>
                             <li>❌ Robo de materiales y accesos no controlados a áreas restringidas.</li>
@@ -226,17 +212,12 @@
                             <li>✅ Control de acceso biométrico en áreas restringidas.</li>
                             <li>✅ Sensores de gas, temperatura y humedad para monitoreo ambiental.</li>
                         </ul>
+                        </div>
                     </div>
-                </div>
-
-                <!-- 4️⃣ Hospitales y Salud -->
-                <div id="salud" class="tab-pane bg-tab" style="background-image: url('src/salud.jpg');">
-                    <div class="overlay"></div>
-                    <div class="tab-inner">
-                        <h3 class="text-3xl font-bold">Hospitales y Centros de Salud</h3>
-                        <p class="text-lg">Seguridad y monitoreo en entornos médicos.</p>
-                        <br>
-                        <h4 class="text-xl font-semibold">Problemáticas</h4>
+                    <div class="service-card bg-black/50 bg-blend-overlay" style="background-image: url('src/salud.jpg');" onclick="toggleContent(this)">
+                        <h3 class="text-3xl font-bold mt-10 ml-10">Hospitales y centros de salud</h3>
+                        <div class="service-card-content hidden m-5">
+                            <h4 class="text-xl font-semibold">Problemáticas</h4>
                         <ul>
                             <li>❌ Acceso no autorizado a áreas críticas como quirófanos y farmacias.</li>
                             <li>❌ Falta de monitoreo de equipos médicos y suministros.</li>
@@ -248,19 +229,12 @@
                             <li>✅ CCTV con reconocimiento facial para identificación de personal y visitantes.</li>
                             <li>✅ Sensores IoT para monitoreo de temperatura en medicamentos.</li>
                         </ul>
+                        </div>
                     </div>
-                </div>
-
-                <!-- 5️⃣ Ciudades Inteligentes -->
-                <div id="ciudades-inteligentes" class="tab-pane bg-tab"
-                    style="background-image: url('src/ciudades.jpg');">
-                    <div class="overlay"></div>
-                    <div class="tab-inner">
-                        <h3 class="text-3xl font-bold">Ciudades Inteligentes</h3>
-                        <p class="text-lg">Gestión eficiente del tráfico y seguridad en espacios urbanos.</p>
-                        <br>
-
-                        <h4 class="text-xl font-semibold">Problemáticas</h4>
+                    <div class="service-card bg-black/50 bg-blend-overlay" style="background-image: url('src/ciudades.jpg');" onclick="toggleContent(this)">
+                        <h3 class="text-3xl font-bold mt-10 ml-10">Ciudades inteligentes</h3>
+                        <div class="service-card-content hidden m-5">
+                            <h4 class="text-xl font-semibold">Problemáticas</h4>
                         <ul>
                             <li>❌ Falta de monitoreo del tráfico y congestión en zonas críticas.</li>
                             <li>❌ Seguridad deficiente en espacios públicos y eventos masivos.</li>
@@ -276,24 +250,18 @@
                             <li>✅ Sensores de calidad del aire y temperatura para control ambiental.</li>
                         </ul>
                         <br>
-
                         <h4 class="text-xl font-semibold">Beneficios</h4>
                         <ul>
                             <li>✅ Movilidad más eficiente con gestión inteligente del tráfico.</li>
                             <li>✅ Mayor seguridad en espacios públicos con monitoreo constante.</li>
                             <li>✅ Reducción del consumo energético con sistemas inteligentes.</li>
                         </ul>
+                        </div>
                     </div>
-                </div>
-                <!-- 6️⃣ Seguridad Pública y Centros de Detención -->
-                <div id="seguridad" class="tab-pane bg-tab" style="background-image: url('src/seguridad.jpg');">
-                    <div class="overlay"></div>
-                    <div class="tab-inner">
-                        <h3 class="text-3xl font-bold">Seguridad Pública y Centros de Detención</h3>
-                        <p class="text-lg">Monitoreo y control avanzado en centros penitenciarios y edificios
-                            gubernamentales.</p>
-                        <br>
-                        <h4 class="text-xl font-semibold">Problemáticas</h4>
+                    <div class="service-card bg-black/50 bg-blend-overlay" style="background-image: url('src/seguridad.jpg');" onclick="toggleContent(this)">
+                        <h3 class="text-3xl font-bold mt-10 ml-10">Seguridad Pública y Centros de Detención</h3>
+                        <div class="service-card-content hidden m-5">
+                            <h4 class="text-xl font-semibold">Problemáticas</h4>
                         <ul>
                             <li>❌ Riesgo de fugas y acceso no autorizado a áreas críticas.</li>
                             <li>❌ Dificultad en la supervisión de internos y personal.</li>
@@ -306,17 +274,12 @@
                             <li>✅ Control de acceso con credenciales biométricas y monitoreo centralizado.</li>
                             <li>✅ Sensores de movimiento y alarmas conectadas a centros de comando.</li>
                         </ul>
+                        </div>
                     </div>
-                </div>
-
-                <!-- 7️⃣ Bancos y Entidades Financieras -->
-                <div id="bancos" class="tab-pane bg-tab" style="background-image: url('src/bancos.jpg');">
-                    <div class="overlay"></div>
-                    <div class="tab-inner">
-                        <h3 class="text-3xl font-bold">Bancos y Entidades Financieras</h3>
-                        <p class="text-lg">Seguridad avanzada en sucursales bancarias y cajeros automáticos.</p>
-                        <br>
-                        <h4 class="text-xl font-semibold">Problemáticas</h4>
+                    <div class="service-card bg-black/50 bg-blend-overlay" style="background-image: url('src/bancos.jpg');" onclick="toggleContent(this)">
+                        <h3 class="text-3xl font-bold mt-10 ml-10">Bancos y Entidades Financieras</h3>
+                        <div class="service-card-content hidden m-5">
+                            <h4 class="text-xl font-semibold">Problemáticas</h4>
                         <ul>
                             <li>❌ Riesgo de robos en sucursales y cajeros automáticos.</li>
                             <li>❌ Acceso no autorizado a bóvedas y áreas restringidas.</li>
@@ -329,17 +292,12 @@
                             <li>✅ Control de acceso con reconocimiento facial en bóvedas.</li>
                             <li>✅ Sensores de intrusión en cajeros automáticos y sucursales.</li>
                         </ul>
+                        </div>
                     </div>
-                </div>
-
-                <!-- 8️⃣ Logística y Centros de Distribución -->
-                <div id="logistica" class="tab-pane bg-tab" style="background-image: url('src/logistica.jpg');">
-                    <div class="overlay"></div>
-                    <div class="tab-inner">
-                        <h3 class="text-3xl font-bold">Logística y Centros de Distribución</h3>
-                        <p class="text-lg">Seguridad y control en la distribución de mercancías.</p>
-                        <br>
-                        <h4 class="text-xl font-semibold">Problemáticas</h4>
+                    <div class="service-card bg-black/50 bg-blend-overlay" style="background-image: url('src/logistica.jpg');" onclick="toggleContent(this)">
+                        <h3 class="text-3xl font-bold mt-10 ml-10">Logística y Centros de Distribución</h3>
+                        <div class="service-card-content hidden m-5">
+                            <h4 class="text-xl font-semibold">Problemáticas</h4>
                         <ul>
                             <li>❌ Robos y pérdidas de mercadería en tránsito y almacenamiento.</li>
                             <li>❌ Falta de visibilidad en las operaciones logísticas.</li>
@@ -352,14 +310,12 @@
                             <li>✅ Control de acceso biométrico para personal autorizado.</li>
                             <li>✅ Sensores de impacto y temperatura en mercadería.</li>
                         </ul>
+                        </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
-
 
     <!-- Servicios -->
     <section id="servicios" class="py-20 bg-gray-800 text-gray-900 rounded-tr-full">

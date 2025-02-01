@@ -50,6 +50,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // tarjetas de la seccion de soluciones
+    function toggleContent(element) {
+        const title = element.querySelector("h3");
+        const content = element.querySelector(".service-card-content");
+    
+        // Alternar la visibilidad
+        if (content.classList.contains("hidden")) {
+            title.classList.add("hidden");
+            content.classList.remove("hidden");
+        } else {
+            title.classList.remove("hidden");
+            content.classList.add("hidden");
+        }
+    }
+    
+    // Asignar la función al objeto global
+    window.toggleContent = toggleContent;
+
     // Tabs de la sección de Servicios
     const buttons = document.querySelectorAll(".tab-btn");
     const tabs = document.querySelectorAll(".tab-pane");
