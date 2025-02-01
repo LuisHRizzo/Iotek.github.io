@@ -274,114 +274,75 @@ section {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-/* partners section */
-.panels{
-    width: 90vw;
-    height: 50vh;
-    display: flex;
-}
-.panels .panel{
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Carousel */
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
     overflow: hidden;
-    cursor: pointer;
-    transition:
-        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-        background 0.2s;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
 }
-.panel.open{
-    flex: 5;
-    font-size: 2rem;
-}
-.panel1 { background-image:url(); }
-.panel2 { background-image:url(); }
-.panel3 { background-image:url(); }
-.panel4 { background-image:url(); }
-.panel5 { background-image:url(); }
-.panel>*{
-    flex: 1 0 auto;
+
+.carousel-track {
     display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    display: flex; /* Asegura que los hijos se alineen dentro del contenedor */
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    transition: all .7s;
-}
-.panel>*:first-child{
-    transform: translateY(-100%);
-}
-.panel.active>*:first-child{
-    transform: translateY(0);
-}
-.panel>*:last-child{
-    transform: translateY(100%);
-}
-.panel.active>*:last-child{
-    transform: translateY(0);
-}
-@media(max-width:1100px){
-    body{
-        font-size: .8rem;
-    }
-    .panel.open{
-        font-size: 1.5rem;
-    }
-}
-@media (max-width: 768px) {
-    .panels {
-        flex-direction: column; /* Cambia de horizontal a vertical */
-        height: auto; /* Ajusta la altura automáticamente */
-    }
-    .panels .panel {
-        flex: none; /* Evita que se expanda horizontalmente */
-        height: auto; /* Permite ajustar dinámicamente la altura */
-        padding: 20px; /* Espacio interno para que no se vea comprimido */
-        font-size: 1rem; /* Reduce el tamaño de la fuente */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .panel.open {
-        flex: none; /* Evita que crezca horizontalmente */
-        height: auto; /* Ajusta dinámicamente para el contenido */
-        font-size: 1.2rem; /* Aumenta un poco el tamaño del texto */
-    }
-
-    /* Ajustes de las imágenes */
-    .panels .panel img {
-        height: 120px; /* Tamaño base más grande para mejor visibilidad */
-        max-width: 100%; /* Asegura que no se deformen */
-        margin: 0 auto; /* Centra la imagen */
-        opacity: 1; /* Asegurar visibilidad */
-        transition: transform 0.3s ease-in-out, height 0.3s ease-in-out;
-    }
-    
-    .panel.open img {
-        height: 150px; /* Tamaño más grande cuando el panel está abierto */
-        transform: scale(1.1); /* Suave animación de agrandamiento */
-    }
-
-    /* Animación de entrada para el texto */
-    .panel>*:not(img) { /* Evitamos que esto afecte a las imágenes */
-        opacity: 0; /* Ocultar por defecto */
-        transform: translateY(10px);
-        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    }
-
-    .panel.open>*:not(img) {
-        opacity: 1; /* Mostrar cuando el panel está abierto */
-        transform: translateY(0);
-    }
+    align-items: center; /* Centra horizontalmente */
+    text-align: center;
+    padding: 1rem;
 }
 
+.carousel-item img {
+    max-width: 250px;
+    max-height: 100px; /* Ajusta el tamaño máximo de la imagen */
+    margin-bottom: 0.5rem;
+    object-fit: contain; /* Asegura que las imágenes mantengan su proporción */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.1);
+}
+
+.carousel-item p {
+    margin-top: 0.5rem;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
 
 /* Contact section */
 form input,

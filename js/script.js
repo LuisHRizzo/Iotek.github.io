@@ -78,18 +78,46 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    const panels = document.querySelectorAll('.panel');
 
-    panels.forEach(item=>{
-        item.addEventListener('click',()=>{
-            item.classList.toggle('open');
-        })
-        item.addEventListener('transitionend',(e)=>{
-            if(e.propertyName.includes('flex')){  //use this instead of `e.propertyName==='flex'` to avoid bug in different browser
-                item.classList.toggle('active');  //some broswer use flex and some flex-grow
-            }
-        })
-    })
+    //carrousel 
+
+    const track = document.querySelector(".carousel-track");
+    const prevButton = document.querySelector(".carousel-button.prev");
+    const nextButton = document.querySelector(".carousel-button.next");
+
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        const width = track.children[0].getBoundingClientRect().width;
+        track.style.transform = `translateX(-${currentIndex * width}px)`;
+    }
+
+    nextButton.addEventListener("click", () => {
+        if (currentIndex < track.children.length - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0; // Reinicia al primer elemento
+        }
+        updateCarousel();
+    });
+
+    prevButton.addEventListener("click", () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = track.children.length - 1; // Va al último elemento
+        }
+        updateCarousel();
+    });
+
+    // Asegurarse de ajustar el carrusel al cambiar el tamaño de la ventana
+    window.addEventListener("resize", updateCarousel);
+
+    // Automático: Cambia cada 5 segundos
+    setInterval(() => {
+        nextButton.click(); // Simula el clic en el botón "Siguiente"
+    }, 5000); // Cambia cada 5 segundos
+
 
     // Formulario de Contacto con EmailJS
     const contactForm = document.getElementById("contact-form");
