@@ -8,16 +8,20 @@ document.addEventListener("DOMContentLoaded", function () {
         menu.classList.toggle("hidden");
     });
 
-    // Cambio de color en el header al hacer scroll
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 50) {
-            header.classList.add("bg-blue-600", "py-2");
-            header.classList.remove("py-4");
-        } else {
-            header.classList.remove("bg-blue-600", "py-2");
-            header.classList.add("py-4");
-        }
-    });
+    var mainHeader = document.getElementById("main-header");
+var prevScrollPos = window.pageYOffset;
+
+window.addEventListener("scroll", function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollPos > currentScrollPos) {
+        // Desplazamiento hacia arriba
+        mainHeader.style.top = "0";
+    } else {
+        // Desplazamiento hacia abajo
+        mainHeader.style.top = "-" + mainHeader.offsetHeight + "px";
+    }
+    prevScrollPos = currentScrollPos;
+});
 
     // Inicializar AOS (Animaciones al hacer scroll)
     AOS.init({
